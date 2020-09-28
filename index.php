@@ -17,8 +17,8 @@ get_header();
 				<?php if ( $archive_subtitle ) { ?>
 					<div class="archive-subtitle section-inner thin max-percentage intro-text"><?php echo wp_kses_post( wpautop( $archive_subtitle ) ); ?></div>
 				<?php } ?>
-			</div><!-- .archive-header-inner -->
-		</header><!-- .archive-header -->
+			</div>
+		</header>
 		<?php
 	}
 
@@ -33,9 +33,8 @@ get_header();
 			get_template_part( 'template-parts/content', get_post_type() );
 		}
 	}
-  
+
   get_template_part( 'template-parts/pagination' ); ?>
-</main><!-- #site-content -->
-<?php get_template_part( 'template-parts/footer-menus-widgets' ); ?>
-<?php
+</main>
+<?php get_template_part( 'template-parts/footer-menus-widgets' );
 get_footer();

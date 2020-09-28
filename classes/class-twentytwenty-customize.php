@@ -1,28 +1,7 @@
 <?php
-/**
- * Customizer settings for this theme.
- *
- * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
- */
-
 if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
-	/**
-	 * CUSTOMIZER SETTINGS
-	 */
 	class TwentyTwenty_Customize {
-
-		/**
-		 * Register customizer options.
-		 *
-		 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
-		 */
 		public static function register( $wp_customize ) {
-
-			/**
-			 * Site Title & Description.
-			 * */
 			$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
 			$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 
@@ -58,11 +37,6 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 				)
 			);
 
-			/**
-			 * Site Identity
-			 */
-
-			/* 2X Header Logo ---------------- */
 			$wp_customize->add_setting(
 				'retina_logo',
 				array(
@@ -83,7 +57,6 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 				)
 			);
 
-			// Header & Footer Background Color.
 			$wp_customize->add_setting(
 				'header_footer_background_color',
 				array(
@@ -124,7 +97,6 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 				)
 			);
 
-			// Enable picking an accent color.
 			$wp_customize->add_setting(
 				'accent_hue_active',
 				array(
@@ -180,6 +152,12 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 							'borders'   => '#dcd7ca',
 						),
 						'header-footer' => array(
+							'text'      => '#000000',
+							'accent'    => '#cd2653',
+							'secondary' => '#6d6d6d',
+							'borders'   => '#dcd7ca',
+						),
+						'header' => array(
 							'text'      => '#000000',
 							'accent'    => '#cd2653',
 							'secondary' => '#6d6d6d',
