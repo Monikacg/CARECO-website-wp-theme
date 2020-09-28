@@ -49,7 +49,7 @@ function twentytwenty_site_logo( $args = array(), $echo = true ) {
 		return $html;
 	}
 
-	echo $html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	echo $html;
 
 }
 
@@ -70,7 +70,7 @@ function twentytwenty_site_description( $echo = true ) {
 		return $html;
 	}
 
-	echo $html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	echo $html;
 }
 
 /**
@@ -108,9 +108,7 @@ add_filter( 'comment_reply_link', 'twentytwenty_filter_comment_reply_link' );
  */
 
 function twentytwenty_the_post_meta( $post_id = null, $location = 'single-top' ) {
-
-	echo twentytwenty_get_post_meta( $post_id, $location ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped in twentytwenty_get_post_meta().
-
+	echo twentytwenty_get_post_meta( $post_id, $location );
 }
 
 function twentytwenty_edit_post_link( $link, $post_id, $text ) {
@@ -126,7 +124,6 @@ function twentytwenty_edit_post_link( $link, $post_id, $text ) {
 
 	$text = sprintf(
 		wp_kses(
-			/* translators: %s: Post title. Only visible to screen readers. */
 			__( 'Edit <span class="screen-reader-text">%s</span>', 'twentytwenty' ),
 			array(
 				'span' => array(
@@ -350,19 +347,16 @@ function twentytwenty_get_post_meta( $post_id = null, $location = 'single-top' )
 
 function twentytwenty_filter_wp_list_pages_item_classes( $css_class, $page, $depth, $args, $current_page ) {
 
-	// Only apply to wp_list_pages() calls with match_menu_classes set to true.
 	$match_menu_classes = isset( $args['match_menu_classes'] );
 
 	if ( ! $match_menu_classes ) {
 		return $css_class;
 	}
 
-	// Add current menu item class.
 	if ( in_array( 'current_page_item', $css_class, true ) ) {
 		$css_class[] = 'current-menu-item';
 	}
 
-	// Add menu item has children class.
 	if ( in_array( 'page_item_has_children', $css_class, true ) ) {
 		$css_class[] = 'menu-item-has-children';
 	}
@@ -375,28 +369,22 @@ add_filter( 'page_css_class', 'twentytwenty_filter_wp_list_pages_item_classes', 
 
 function twentytwenty_add_sub_toggles_to_main_menu( $args, $item, $depth ) {
 
-	// Add sub menu toggles to the Expanded Menu with toggles.
 	if ( isset( $args->show_toggles ) && $args->show_toggles ) {
 
-		// Wrap the menu item link contents in a div, used for positioning.
 		$args->before = '<div class="ancestor-wrapper">';
 		$args->after  = '';
 
-		// Add a toggle to items with children.
 		if ( in_array( 'menu-item-has-children', $item->classes, true ) ) {
 
 			$toggle_target_string = '.menu-modal .menu-item-' . $item->ID . ' > .sub-menu';
 			$toggle_duration      = twentytwenty_toggle_duration();
 
-			// Add the sub menu toggle.
 			$args->after .= '<button class="toggle sub-menu-toggle fill-children-current-color" data-toggle-target="' . $toggle_target_string . '" data-toggle-type="slidetoggle" data-toggle-duration="' . absint( $toggle_duration ) . '" aria-expanded="false"><span class="screen-reader-text">' . __( 'Show sub menu', 'twentytwenty' ) . '</span>' . twentytwenty_get_theme_svg( 'chevron-down' ) . '</button>';
 
 		}
 
-		// Close the wrapper.
 		$args->after .= '</div><!-- .ancestor-wrapper -->';
 
-		// Add sub menu icons to the primary menu without toggles.
 	} elseif ( 'primary' === $args->theme_location ) {
 		if ( in_array( 'menu-item-has-children', $item->classes, true ) ) {
 			$args->after = '<span class="icon"></span>';
@@ -413,7 +401,6 @@ add_filter( 'nav_menu_item_args', 'twentytwenty_add_sub_toggles_to_main_menu', 1
 
 
 function twentytwenty_nav_menu_social_icons( $item_output, $item, $depth, $args ) {
-	// Change SVG icon inside social links menu if there is supported URL.
 	if ( 'social' === $args->theme_location ) {
 		$svg = TwentyTwenty_SVG_Icons::get_social_link_svg( $item->url );
 		if ( empty( $svg ) ) {
@@ -432,11 +419,9 @@ add_filter( 'walker_nav_menu_start_el', 'twentytwenty_nav_menu_social_icons', 10
  */
 
 function twentytwenty_no_js_class() {
-
 	?>
 	<script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script>
 	<?php
-
 }
 
 add_action( 'wp_head', 'twentytwenty_no_js_class' );

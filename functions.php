@@ -228,7 +228,7 @@ function twentytwenty_sidebar_registration() {
 				'name'        => __( 'Footer #1', 'twentytwenty' ),
 				'id'          => 'sidebar-1',
 				'description' => __( 'Widgets in this area will be displayed in the first column in the footer.', 'twentytwenty' ),
-				'before_title'  => '<h6 class="widget-title subheading heading-size-3">',
+				'before_title'  => '<h6 class="widget-title subheading heading-size-4">',
 				'after_title'   => '</h6>',
 			)
 		)
@@ -241,7 +241,7 @@ function twentytwenty_sidebar_registration() {
 				'name'        => __( 'Footer #2', 'twentytwenty' ),
 				'id'          => 'sidebar-2',
 				'description' => __( 'Widgets in this area will be displayed in the second column in the footer.', 'twentytwenty' ),
-				'before_title'  => '<h6 class="widget-title subheading heading-size-3">',
+				'before_title'  => '<h6 class="widget-title subheading heading-size-4">',
 				'after_title'   => '</h6>',
 			)
 		)
@@ -254,7 +254,7 @@ function twentytwenty_sidebar_registration() {
 				'name'        => __( 'Footer #3', 'twentytwenty' ),
 				'id'          => 'sidebar-3',
 				'description' => __( 'Widgets in this area will be displayed in the third column in the footer.', 'twentytwenty' ),
-				'before_title'  => '<h6 class="widget-title subheading heading-size-3">',
+				'before_title'  => '<h6 class="widget-title subheading heading-size-4">',
 				'after_title'   => '</h6>',
 			)
 		)

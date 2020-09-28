@@ -1,52 +1,25 @@
 <?php
-/**
- * Twenty Twenty Starter Content
- *
- * @link https://make.wordpress.org/core/2016/11/30/starter-content-for-themes-in-4-7/
- *
- * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 1.0
- */
-
-/**
- * Function to return the array of starter content for the theme.
- *
- * Passes it through the `twentytwenty_starter_content` filter before returning.
- *
- * @since Twenty Twenty 1.0
- *
- * @return array A filtered array of args for the starter_content.
- */
 function twentytwenty_get_starter_content() {
-
-	// Define and register starter content to showcase the theme on new sites.
 	$starter_content = array(
 		'widgets'     => array(
-			// Place one core-defined widgets in the first footer widget area.
 			'sidebar-1' => array(
 				'text_about',
 			),
-			// Place one core-defined widgets in the second footer widget area.
 			'sidebar-2' => array(
 				'text_business_info',
 			),
 		),
-
-		// Create the custom image attachments used as post thumbnails for pages.
 		'attachments' => array(
 			'image-opening' => array(
 				'post_title' => _x( 'The New UMoMA Opens its Doors', 'Theme starter content', 'twentytwenty' ),
-				'file'       => 'assets/images/2020-landscape-1.png', // URL relative to the template directory.
+				'file'       => 'assets/images/2020-landscape-1.png',
 			),
 		),
 
-		// Specify the core-defined pages to create and add custom thumbnails to some of them.
 		'posts'       => array(
 			'front' => array(
 				'post_type'    => 'page',
 				'post_title'   => __( 'The New UMoMA Opens its Doors', 'twentytwenty' ),
-				// Use the above featured image with the predefined about page.
 				'thumbnail'    => '{{image-opening}}',
 				'post_content' => join(
 					'',
@@ -162,37 +135,30 @@ function twentytwenty_get_starter_content() {
 			'contact',
 			'blog',
 		),
-
-		// Default to a static front page and assign the front and posts pages.
 		'options'     => array(
 			'show_on_front'  => 'page',
 			'page_on_front'  => '{{front}}',
 			'page_for_posts' => '{{blog}}',
 		),
-
-		// Set up nav menus for each of the two areas registered in the theme.
 		'nav_menus'   => array(
-			// Assign a menu to the "primary" location.
 			'primary'  => array(
 				'name'  => __( 'Primary', 'twentytwenty' ),
 				'items' => array(
-					'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
+					'link_home',
 					'page_about',
 					'page_blog',
 					'page_contact',
 				),
 			),
-			// This replicates primary just to demonstrate the expanded menu.
 			'expanded' => array(
 				'name'  => __( 'Primary', 'twentytwenty' ),
 				'items' => array(
-					'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
+					'link_home',
 					'page_about',
 					'page_blog',
 					'page_contact',
 				),
 			),
-			// Assign a menu to the "social" location.
 			'social'   => array(
 				'name'  => __( 'Social Links Menu', 'twentytwenty' ),
 				'items' => array(
@@ -205,14 +171,5 @@ function twentytwenty_get_starter_content() {
 			),
 		),
 	);
-
-	/**
-	 * Filters Twenty Twenty array of starter content.
-	 *
-	 * @since Twenty Twenty 1.0
-	 *
-	 * @param array $starter_content Array of starter content.
-	 */
 	return apply_filters( 'twentytwenty_starter_content', $starter_content );
-
 }
