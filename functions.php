@@ -424,19 +424,19 @@ function twentytwenty_get_color_for_area( $area = 'content', $context = 'text' )
 		array(
 			'content'       => array(
 				'text'      => '#000000',
-				'accent'    => '#cd2653',
+				'accent'    => '#ed8b00',
 				'secondary' => '#6d6d6d',
 				'borders'   => '#dcd7ca',
 			),
 			'header-footer' => array(
 				'text'      => '#000000',
-				'accent'    => '#cd2653',
+				'accent'    => '#ed8b00',
 				'secondary' => '#6d6d6d',
 				'borders'   => '#dcd7ca',
 			),
 			'header' => array(
 				'text'      => '#000000',
-				'accent'    => '#cd2653',
+				'accent'    => '#ed8b00',
 				'secondary' => '#6d6d6d',
 				'borders'   => '#dcd7ca',
 			),
@@ -471,7 +471,7 @@ function twentytwenty_get_elements_array() {
 			'accent'     => array(
 				'color'            => array( '.color-accent', '.color-accent-hover:hover', '.color-accent-hover:focus', ':root .has-accent-color', '.has-drop-cap:not(:focus):first-letter', '.wp-block-button.is-style-outline', 'a' ),
 				'border-color'     => array( 'blockquote', '.border-color-accent', '.border-color-accent-hover:hover', '.border-color-accent-hover:focus' ),
-				'background-color' => array( 'button', '.button', '.faux-button', '.wp-block-button__link', '.wp-block-file .wp-block-file__button', 'input[type="button"]', 'input[type="reset"]', 'input[type="submit"]', '.bg-accent', '.bg-accent-hover:hover', '.bg-accent-hover:focus', ':root .has-accent-background-color', '.comment-reply-link' ),
+				'background-color' => array( '.comment-reply-link' ),
 				'fill'             => array( '.fill-children-accent', '.fill-children-accent *' ),
 			),
 			'background' => array(
@@ -496,7 +496,7 @@ function twentytwenty_get_elements_array() {
 		),
 		'header-footer' => array(
 			'accent'     => array(
-				'color'            => array( 'body:not(.overlay-header) .primary-menu > li > a', 'body:not(.overlay-header) .primary-menu > li > .icon', '.modal-menu a', '.footer-menu a, .footer-widgets a', '#site-footer .wp-block-button.is-style-outline', '.wp-block-pullquote:before', '.singular:not(.overlay-header) .entry-header a', '.archive-header a', '.header-footer-group .color-accent', '.header-footer-group .color-accent-hover:hover' ),
+				'color'            => array('.modal-menu a', '.footer-menu a, .footer-widgets a', '#site-footer .wp-block-button.is-style-outline', '.wp-block-pullquote:before', '.singular:not(.overlay-header) .entry-header a', '.archive-header a', '.header-footer-group .color-accent', '.header-footer-group .color-accent-hover:hover' ),
 				'background-color' => array( '.social-icons a', '#site-footer button:not(.toggle)', '#site-footer .button', '#site-footer .faux-button', '#site-footer .wp-block-button__link', '#site-footer .wp-block-file__button', '#site-footer input[type="button"]', '#site-footer input[type="reset"]', '#site-footer input[type="submit"]' ),
 			),
 			'background' => array(
@@ -520,7 +520,7 @@ function twentytwenty_get_elements_array() {
 
 		'header' => array(
 			'accent'     => array(
-				'color'            => array( 'body:not(.overlay-header) .primary-menu > li > a', 'body:not(.overlay-header) .primary-menu > li > .icon', '.modal-menu a', '.footer-menu a, .footer-widgets a', '#site-footer .wp-block-button.is-style-outline', '.wp-block-pullquote:before', '.singular:not(.overlay-header) .entry-header a', '.archive-header a', '.header .color-accent', '.header .color-accent-hover:hover' ),
+				'color'            => array('.modal-menu a', '.footer-menu a, .footer-widgets a', '#site-footer .wp-block-button.is-style-outline', '.wp-block-pullquote:before', '.singular:not(.overlay-header) .entry-header a', '.archive-header a', '.header .color-accent', '.header .color-accent-hover:hover' ),
 				'background-color' => array( '.social-icons a', '#site-footer button:not(.toggle)', '#site-footer .button', '#site-footer .faux-button', '#site-footer .wp-block-button__link', '#site-footer .wp-block-file__button', '#site-footer input[type="button"]', '#site-footer input[type="reset"]', '#site-footer input[type="submit"]' ),
 			),
 			'background' => array(

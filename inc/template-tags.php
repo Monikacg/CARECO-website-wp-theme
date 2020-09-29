@@ -416,7 +416,7 @@ add_filter( 'walker_nav_menu_start_el', 'twentytwenty_nav_menu_social_icons', 10
 
 /**
  * Classes
- */
+*/
 
 function twentytwenty_no_js_class() {
 	?>
@@ -492,7 +492,7 @@ function twentytwenty_body_classes( $classes ) {
 	$has_sidebar_2   = is_active_sidebar( 'sidebar-2' );
 
 	// Add a class indicating whether those elements are output.
-	if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 ) {
+	if ( $has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2 || $has_sidebar_3 ) {
 		$classes[] = 'footer-top-visible';
 	} else {
 		$classes[] = 'footer-top-hidden';

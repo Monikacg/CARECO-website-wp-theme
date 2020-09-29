@@ -98,7 +98,7 @@ body {
 	background: #fff;
 	box-sizing: border-box;
 	color: #585957;
-	font-family: 'proxima_novaregular', sans-serif;
+	font-family: 'proxima_novaregular';
 	font-size: 1.8rem;
 	letter-spacing: -0.015em;
 	text-align: left;
@@ -106,7 +106,7 @@ body {
 
 @supports ( font-variation-settings: normal ) {
 	body {
-		font-family: 'proxima_novaregular', sans-serif;
+		font-family: 'proxima_novaregular';
 	}
 }
 
@@ -203,64 +203,64 @@ path {
 
 @font-face {
     font-family: 'proxima_nova_altbold';
-    src: url('proxima_nova_alt_bold-webfont.woff2') format('woff2'),
-         url('proxima_nova_alt_bold-webfont.woff') format('woff');
+    src: url(./fonts/proxima_nova/proxima_nova_alt_bold-webfont.woff2) format('woff2'),
+         url(./fonts/proxima_nova/proxima_nova_alt_bold-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_nova_altlight';
-    src: url('proxima_nova_alt_light-webfont.woff2') format('woff2'),
-         url('proxima_nova_alt_light-webfont.woff') format('woff');
+    src: url(./fonts/proxima_nova/proxima_nova_alt_light-webfont.woff2) format('woff2'),
+         url(./fonts/proxima_nova/proxima_nova_alt_light-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_nova_altthin';
-    src: url('proxima_nova_alt_thin-webfont.woff2') format('woff2'),
-         url('proxima_nova_alt_thin-webfont.woff') format('woff');
+    src: url(./fonts/proxima_nova/proxima_nova_alt_thin-webfont.woff2) format('woff2'),
+         url(./fonts/proxima_nova/proxima_nova_alt_thin-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_novablack';
-    src: url('proxima_nova_black-webfont.woff2') format('woff2'),
-         url('proxima_nova_black-webfont.woff') format('woff');
+    src: url(./fonts/proxima_nova/proxima_nova_black-webfont.woff2) format('woff2'),
+         url(./fonts/proxima_nova/proxima_nova_black-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_novabold';
-    src: url('proxima_nova_bold-webfont.woff2') format('woff2'),
-         url('proxima_nova_bold-webfont.woff') format('woff');
+    src: url(./fonts/proxima_nova/proxima_nova_bold-webfont.woff2) format('woff2'),
+         url(./fonts/proxima_nova/proxima_nova_bold-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_novaextrabold';
-    src: url('proxima_nova_extrabold-webfont.woff2') format('woff2'),
-         url('proxima_nova_extrabold-webfont.woff') format('woff');
+    src: url(./fonts/proxima_nova/proxima_nova_extrabold-webfont.woff2) format('woff2'),
+         url(./fonts/proxima_nova/proxima_nova_extrabold-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_novathin';
-    src: url('proxima_nova_thin-webfont.woff2') format('woff2'),
-         url('proxima_nova_thin-webfont.woff') format('woff');
+    src: url(./fonts/proxima_nova/proxima_nova_thin-webfont.woff2) format('woff2'),
+         url(./fonts/proxima_nova/proxima_nova_thin-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_novaregular';
-    src: url('proxima_nova-webfont.woff2') format('woff2'),
-         url('proxima_nova-webfont.woff') format('woff');
+    src: url(./fonts/proxima_nova/proxima_nova-webfont.woff2) format('woff2'),
+         url(./fonts/proxima_nova/proxima_nova-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -443,8 +443,8 @@ hr.styled-separator::after {
 }
 */
 a {
-	color: #cd2653;
-	text-decoration: underline;
+	color: #575958;
+	text-decoration: none;
 }
 
 a:hover,
@@ -524,7 +524,7 @@ dd + dt {
 /* Quotes ------------------------------------ */
 
 blockquote {
-	border-color: #cd2653;
+	border-color: #ed8b00;
 	border-style: solid;
 
 	/*rtl:ignore*/
@@ -716,7 +716,7 @@ button,
 .faux-button,
 .wp-block-button__link,
 .wp-block-file__button {
-	font-family: 'proxima_novaregular', sans-serif;
+	font-family: 'proxima_novaregular';
 	line-height: 1;
 }
 
@@ -729,7 +729,7 @@ button,
 	.faux-button.more-link,
 	.wp-block-button__link,
 	.wp-block-file__button {
-		font-family: 'proxima_novaregular', sans-serif;
+		font-family: 'proxima_novaregular';
 	}
 }
 
@@ -818,7 +818,7 @@ input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background: #cd2653;
+	background: #ed8b00;
 	border: none;
 	border-radius: 0;
 	color: #fff;
@@ -1068,7 +1068,7 @@ button.toggle {
 .color-accent,
 .color-accent-hover:focus,
 .color-accent-hover:hover {
-	color: #cd2653;
+	color: #ed8b00;
 }
 
 /* BACKGROUND COLOR */
@@ -1076,7 +1076,7 @@ button.toggle {
 .bg-accent,
 .bg-accent-hover:focus,
 .bg-accent-hover:hover {
-	background-color: #cd2653;
+	background-color: #ed8b00;
 }
 
 /* BORDER COLOR */
@@ -1084,14 +1084,14 @@ button.toggle {
 .border-color-accent,
 .border-color-accent-hover:focus,
 .border-color-accent-hover:hover {
-	border-color: #cd2653;
+	border-color: #ed8b00;
 }
 
 /* FILL COLOR */
 
 .fill-children-accent,
 .fill-children-accent * {
-	fill: #cd2653;
+	fill: #ed8b00;
 }
 
 .fill-children-current-color,
@@ -1276,7 +1276,7 @@ ul.social-icons li {
 
 .social-icons a {
 	align-items: center;
-	background: #cd2653;
+	background: #ed8b00;
 	border-radius: 50%;
 	color: #fff;
 	display: flex;
@@ -1401,7 +1401,7 @@ body:not(.enable-search-modal) .site-logo img {
 /* Overlay Header ---------------------------- */
 
 .overlay-header #site-header {
-	background: transparent;
+	background: white;
 	margin: 0;
 	position: absolute;
 	left: 0;
@@ -1545,6 +1545,7 @@ ul.primary-menu {
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	margin: -0.8rem 0 0 -1.6rem;
+	color: rgba(87,89,88,1); /* Denne har jeg lagt til */
 }
 
 .primary-menu .icon {
@@ -1619,7 +1620,7 @@ ul.primary-menu {
 
 .primary-menu li.current-menu-item > a,
 .primary-menu li.current-menu-item > .link-icon-wrapper > a {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .primary-menu li.current-menu-item > a:hover,
@@ -1627,7 +1628,7 @@ ul.primary-menu {
 .primary-menu li.current-menu-item > a:focus,
 .primary-menu li.current-menu-item > .link-icon-wrapper > a:focus {
 	text-decoration: none;
-	color: inherit;
+	color: #ed8b00;
 }
 
 /* SUB MENU */
@@ -2206,6 +2207,22 @@ button.search-untoggle {
 	display: block;
 }
 
+.forside,
+.forside::before {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 30px;
+	height: 100vh;
+}
+
+.forside::before {
+	background-image: linear-gradient(to top, rgba(91,127,149,1), transparent, rgba(256,256,256,1));
+	content: "";
+	display: block;
+}
+
 .cover-header .entry-header {
 	position: relative;
 	width: 100%;
@@ -2715,11 +2732,11 @@ h2.entry-title {
 /* CUSTOM COLORS */
 
 :root .has-accent-color {
-	color: #cd2653;
+	color: #ed8b00;
 }
 
 :root .has-accent-background-color {
-	background-color: #cd2653;
+	background-color: #ed8b00;
 	color: #fff;
 }
 
@@ -2777,8 +2794,8 @@ h2.entry-title {
 }
 
 .has-drop-cap:not(:focus)::first-letter {
-	color: #cd2653;
-	font-family: 'proxima_novaregular', sans-serif;
+	color: #ed8b00;
+	font-family: 'proxima_novaregular';
 	font-size: 5.1em;
 	font-weight: 800;
 	margin: 0.05em 0.1em 0 0;
@@ -2806,7 +2823,7 @@ h2.entry-title {
 .entry-content .wp-block-pullquote,
 .entry-content .wp-block-quote.is-large,
 .entry-content .wp-block-quote.is-style-large {
-	font-family: 'proxima_novaregular', sans-serif;
+	font-family: 'proxima_novaregular';
 }
 
 @supports ( font-variation-settings: normal ) {
@@ -2818,7 +2835,7 @@ h2.entry-title {
 	.entry-content .wp-block-latest-comments,
 	.entry-content .wp-block-cover-image p,
 	.entry-content .wp-block-pullquote {
-		font-family: 'proxima_novaregular', sans-serif;
+		font-family: 'proxima_novaregular';
 	}
 }
 
@@ -2996,7 +3013,7 @@ h2.entry-title {
 }
 
 .wp-block-button.is-style-outline {
-	color: #cd2653;
+	color: #ed8b00;
 }
 
 .is-style-outline .wp-block-button__link:not(.has-text-color) {
@@ -3182,7 +3199,7 @@ figure.wp-block-gallery.alignfull {
 .wp-block-pullquote::before {
 	background: #fff;
 	border-radius: 50%;
-	color: #cd2653;
+	color: #ed8b00;
 	content: "”";
 	display: block;
 	font-size: 6.2rem;
@@ -3510,7 +3527,7 @@ figure.wp-block-table.is-style-stripes {
 /* Font Families ----------------------------- */
 
 .entry-content {
-	font-family: 'proxima_novaregular', sans-serif;
+	font-family: 'proxima_novaregular';
 	letter-spacing: normal;
 }
 
@@ -3526,7 +3543,7 @@ figure.wp-block-table.is-style-stripes {
 .entry-content address,
 .entry-content .wp-caption-text,
 .entry-content .wp-block-file {
-	font-family: 'proxima_novaregular', sans-serif;
+	font-family: 'proxima_novaregular';
 }
 
 @supports ( font-variation-settings: normal ) {
@@ -3543,7 +3560,7 @@ figure.wp-block-table.is-style-stripes {
 	.entry-content address,
 	.entry-content .wp-caption-text,
 	.entry-content .wp-block-file {
-		font-family: 'proxima_novaregular', sans-serif;
+		font-family: 'proxima_novaregular';
 	}
 }
 
@@ -3806,7 +3823,7 @@ div.comment:first-of-type {
 }
 
 .comment-reply-link {
-	background-color: #cd2653;
+	background-color: #ed8b00;
 	color: #fff;
 	display: block;
 	padding: 0.7rem;
@@ -4117,14 +4134,14 @@ div.comment:first-of-type {
 .widget_text dl,
 .widget_text dt,
 .widget-content .rssSummary {
-	font-family: 'proxima_novaregular', sans-serif;
+	font-family: 'proxima_novaregular';
 	letter-spacing: normal;
 }
 
 .widget-content cite,
 .widget-content figcaption,
 .widget-content .wp-caption-text {
-	font-family: 'proxima_novaregular', sans-serif;
+	font-family: 'proxima_novaregular';
 }
 
 @supports ( font-variation-settings: normal ) {
@@ -4132,7 +4149,7 @@ div.comment:first-of-type {
 	.widget-content cite,
 	.widget-content figcaption,
 	.widget-content .wp-caption-text {
-		font-family: 'proxima_novaregular', sans-serif;
+		font-family: 'proxima_novaregular';
 	}
 }
 
@@ -4421,7 +4438,7 @@ ul.footer-social li {
 }
 
 .footer-social a {
-	background-color: #cd2653;
+	background-color: #ed8b00;
 	height: 3.6rem;
 	width: 3.6rem;
 }
@@ -5558,6 +5575,7 @@ a.to-the-top > * {
 	/* FOOTER WIDGETS */
 
 	.footer-widgets-outer-wrapper {
+		color: white; /* Denne har jeg lagt til */
 		padding: 8rem 0;
 	}
 
@@ -5585,6 +5603,14 @@ a.to-the-top > * {
 
 	.footer-widgets .widget:first-child {
 		margin-top: 0;
+	}
+
+	.footer-widgets i {
+		color: white; /* Denne har jeg lagt til */
+	}
+
+	.footer-widgets i:hover {
+		color: rgba(237,139,0); /* Denne har jeg lagt til */
 	}
 
 	/* FOOTER BOTTOM */
