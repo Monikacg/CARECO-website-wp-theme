@@ -423,22 +423,22 @@ function twentytwenty_get_color_for_area( $area = 'content', $context = 'text' )
 		'accent_accessible_colors',
 		array(
 			'content'       => array(
-				'text'      => '#000000',
+				'text'      => '#707372',
 				'accent'    => '#ed8b00',
-				'secondary' => '#6d6d6d',
-				'borders'   => '#dcd7ca',
+				'secondary' => '#707372',
+				'borders'   => '#d6d2c4',
 			),
 			'header-footer' => array(
-				'text'      => '#000000',
+				'text'      => '#707372',
 				'accent'    => '#ed8b00',
-				'secondary' => '#6d6d6d',
-				'borders'   => '#dcd7ca',
+				'secondary' => '#707372',
+				'borders'   => '#d6d2c4',
 			),
 			'header' => array(
-				'text'      => '#000000',
+				'text'      => '#707372',
 				'accent'    => '#ed8b00',
-				'secondary' => '#6d6d6d',
-				'borders'   => '#dcd7ca',
+				'secondary' => '#707372',
+				'borders'   => '#d6d2c4',
 			),
 		)
 	);
@@ -466,10 +466,11 @@ function twentytwenty_get_customizer_color_vars() {
 
 function twentytwenty_get_elements_array() {
 	// [key-in-saved-setting][sub-key-in-setting][css-property] = [elements].
+	/*
 	$elements = array(
 		'content'       => array(
 			'accent'     => array(
-				'color'            => array( '.color-accent', '.color-accent-hover:hover', '.color-accent-hover:focus', ':root .has-accent-color', '.has-drop-cap:not(:focus):first-letter', '.wp-block-button.is-style-outline', 'a' ),
+				'color'            => array( '.color-accent', '.color-accent-hover:hover', '.color-accent-hover:focus', ':root .has-accent-color', '.has-drop-cap:not(:focus):first-letter', '.wp-block-button.is-style-outline' ),
 				'border-color'     => array( 'blockquote', '.border-color-accent', '.border-color-accent-hover:hover', '.border-color-accent-hover:focus' ),
 				'background-color' => array( '.comment-reply-link' ),
 				'fill'             => array( '.fill-children-accent', '.fill-children-accent *' ),
@@ -479,7 +480,7 @@ function twentytwenty_get_elements_array() {
 				'background-color' => array( ':root .has-background-background-color' ),
 			),
 			'text'       => array(
-				'color'            => array( 'body', '.entry-title a', ':root .has-primary-color' ),
+				'color'            => array( '.entry-title a', ':root .has-primary-color' ),
 				'background-color' => array( ':root .has-primary-background-color' ),
 			),
 			'secondary'  => array(
@@ -504,7 +505,7 @@ function twentytwenty_get_elements_array() {
 				'background-color' => array('.footer-nav-widgets-wrapper', '#site-footer', '.menu-modal', '.menu-modal-inner', '.search-modal-inner', '.archive-header', '.singular .featured-media:before', '.wp-block-pullquote:before' ),
 			),
 			'text'       => array(
-				'color'               => array( '.header-footer-group', 'body:not(.overlay-header) #site-header .toggle', '.menu-modal .toggle' ),
+				'color'               => array( 'body:not(.overlay-header) #site-header .toggle', '.menu-modal .toggle' ),
 				'background-color'    => array( 'body:not(.overlay-header) .primary-menu ul' ),
 				'border-bottom-color' => array( 'body:not(.overlay-header) .primary-menu > li > ul:after' ),
 				'border-left-color'   => array( 'body:not(.overlay-header) .primary-menu ul ul:after' ),
@@ -543,4 +544,5 @@ function twentytwenty_get_elements_array() {
 		),
 	);
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
+	*/
 }
