@@ -4390,6 +4390,7 @@ div.comment:first-of-type {
 .footer-top,
 .footer-widgets-outer-wrapper,
 #site-footer {
+	color: white;
 	padding: 3rem 0;
 }
 
@@ -5594,6 +5595,7 @@ a.to-the-top > * {
 	}
 
 	.footer-widgets-wrapper {
+		color: white;
 		display: flex;
 		justify-content: space-between;
 		margin-left: -4rem;
