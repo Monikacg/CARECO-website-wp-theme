@@ -1023,6 +1023,7 @@ button.toggle {
 	letter-spacing: inherit;
 	padding: 0;
 	text-transform: none;
+	text-decoration: none;
 }
 
 /* Hiding and Showing ------------------------ */
@@ -1416,7 +1417,7 @@ body:not(.enable-search-modal) .site-logo img {
 
 .overlay-header .site-description,
 .overlay-header .toggle {
-	color: inherit;
+	color: rgba(87,89,88,1);
 }
 
 .overlay-header .header-inner .toggle-wrapper::before {
@@ -1492,7 +1493,8 @@ body:not(.enable-search-modal) .site-logo img {
 
 .header-inner .toggle:focus .toggle-text,
 .header-inner .toggle:hover .toggle-text {
-	text-decoration: underline;
+	text-decoration: none;
+	color: #ed8b00;
 }
 
 /* Search Toggle ----------------------------- */
@@ -1838,6 +1840,11 @@ button.close-nav-toggle svg {
 
 button.close-nav-toggle .toggle-text {
 	margin-right: 1.6rem;
+	color: rgba(87,89,88,1);
+}
+
+button.close-nav-toggle .toggle-text:hover {
+	color: #ed8b00;
 }
 
 .menu-modal .menu-top {
@@ -1866,9 +1873,15 @@ button.close-nav-toggle .toggle-text {
 
 .modal-menu > li > a,
 .modal-menu > li > .ancestor-wrapper > a {
+	color: rgba(87,89,88,1);
 	font-size: 2rem;
 	font-weight: 700;
 	letter-spacing: -0.0375em;
+}
+
+.modal-menu > li > a:hover,
+.modal-menu > li > .ancestor-wrapper > a:hover {
+	color: #ed8b00;
 }
 
 .modal-menu > li:last-child {
@@ -1886,14 +1899,15 @@ button.close-nav-toggle .toggle-text {
 	padding: 2rem 2.5rem;
 	text-decoration: none;
 	width: 100%;
+	color: rgba(87,89,88,1);
 }
 
 .modal-menu a:focus,
-.modal-menu a:hover,
-.modal-menu li.current-menu-item > .ancestor-wrapper > a,
-.modal-menu li.current_page_ancestor > .ancestor-wrapper > a {
-	text-decoration: underline;
+.modal-menu a:hover {
+	text-decoration: none;
+	color: #ed8b00;
 }
+
 
 button.sub-menu-toggle {
 	border-left: 0.1rem solid #dedfdf;
@@ -1923,7 +1937,7 @@ button.sub-menu-toggle.active svg {
 }
 
 .modal-menu ul li a {
-	color: inherit;
+	color: rgba(87,89,88,1);
 	font-weight: 500;
 }
 
