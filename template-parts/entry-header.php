@@ -60,7 +60,7 @@ if ( is_singular() ) {
 			?>
 
 			<div class="intro-text section-inner max-percentage<?php echo $intro_text_width; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output ?>">
-				<?php the_excerpt(); ?>
+				<?php //the_excerpt(); ?>
 			</div>
 
 			<?php

@@ -413,53 +413,7 @@ address {
 	line-height: 1.5;
 	margin: 0 0 2rem 0;
 }
-/*
-hr {
-	border-style: solid;
-	border-width: 0.1rem 0 0 0;
-	border-color: rgba(214, 210, 196, 1);
-	margin: 4rem 0;
-}
 
-.entry-content hr,
-hr.styled-separator {
-	background: linear-gradient(to left, currentColor calc(50% - 16px), transparent calc(50% - 16px), transparent calc(50% + 16px), currentColor calc(50% + 16px));
-	background-color: transparent !important;
-	border: none;
-	height: 0.1rem;
-	overflow: visible;
-	position: relative;
-}
-
-.entry-content hr:not(.has-background),
-hr.styled-separator {
-	color: rgba(87, 89, 88, 1);
-}
-
-.entry-content hr::before,
-.entry-content hr::after,
-hr.styled-separator::before,
-hr.styled-separator::after {
-	background: currentColor;
-	content: "";
-	display: block;
-	height: 1.6rem;
-	position: absolute;
-	top: calc(50% - 0.8rem);
-	transform: rotate(22.5deg);
-	width: 0.1rem;
-}
-
-.entry-content hr::before,
-hr.styled-separator::before {
-	left: calc(50% - 0.5rem);
-}
-
-.entry-content hr::after,
-hr.styled-separator::after {
-	right: calc(50% - 0.5rem);
-}
-*/
 a {
 	color: rgba(87, 89, 88, 1);
 	text-decoration: none;

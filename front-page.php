@@ -77,7 +77,7 @@ get_header();
 										?>
 
 										<div class="intro-text section-inner max-percentage<?php echo esc_attr( $intro_text_width ); ?>">
-											<?php the_excerpt(); ?>
+											<?php //the_excerpt(); ?>
 										</div>
 
 										<?php
