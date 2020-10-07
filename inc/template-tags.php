@@ -499,8 +499,8 @@ function twentytwenty_body_classes( $classes ) {
 	}
 
 	// Get header/footer background color.
-	$header_footer_background = get_theme_mod( 'header_footer_background_color', '#ffffff' );
-	$header_footer_background = strtolower( '#' . ltrim( $header_footer_background, '#' ) );
+	$footer_background = get_theme_mod( 'footer_background_color', '#ffffff' );
+	$footer_background = strtolower( '#' . ltrim( $footer_background, '#' ) );
 
 	$header_background = get_theme_mod( 'header_background_color', '#ffffff' );
 	$header_background = strtolower( '#' . ltrim( $header_background, '#' ) );
@@ -510,7 +510,7 @@ function twentytwenty_body_classes( $classes ) {
 	$background_color = strtolower( '#' . ltrim( $background_color, '#' ) );
 
 	// Add extra class if main background and header/footer background are the same color.
-	if ( $background_color === $header_footer_background ) {
+	if ( $background_color === $footer_background ) {
 		$classes[] = 'reduced-spacing';
 	}
 

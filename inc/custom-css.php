@@ -36,8 +36,8 @@ if ( ! function_exists( 'twentytwenty_get_customizer_css' ) ) {
 		$accent_default    = '#ed8b00';
 
 		// Header.
-		$header_footer_background         = sanitize_hex_color( twentytwenty_get_color_for_area( 'header-footer', 'background' ) );
-		$header_footer_background_default = '#ffffff';
+		$footer_background         = sanitize_hex_color( twentytwenty_get_color_for_area( 'header-footer', 'background' ) );
+		$footer_background_default = '#ffffff';
 
 		$header_background         = sanitize_hex_color( twentytwenty_get_color_for_area( 'header', 'background' ) );
 		$header_background_default = '#ffffff';
@@ -110,8 +110,8 @@ if ( ! function_exists( 'twentytwenty_get_customizer_css' ) ) {
 			}
 
 			// Header Footer Background Color.
-			if ( $header_footer_background && $header_footer_background !== $header_footer_background_default ) {
-				twentytwenty_generate_css( '.editor-styles-wrapper .wp-block-pullquote::before', 'background-color', $header_footer_background );
+			if ( $footer_background && $footer_background !== $footer_background_default ) {
+				twentytwenty_generate_css( '.editor-styles-wrapper .wp-block-pullquote::before', 'background-color', $footer_background );
 			}
 			if ( $header_background && $header_background !== $header_background_default ) {
 				twentytwenty_generate_css( '.editor-styles-wrapper .wp-block-pullquote::before', 'background-color', $header_background );

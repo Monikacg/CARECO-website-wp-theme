@@ -428,7 +428,7 @@ function twentytwenty_get_color_for_area( $area = 'content', $context = 'text' )
 				'secondary' => '#707372',
 				'borders'   => '#d6d2c4',
 			),
-			'header-footer' => array(
+			'footer' => array(
 				'text'      => '#707372',
 				'accent'    => '#ed8b00',
 				'secondary' => '#707372',
@@ -454,8 +454,8 @@ function twentytwenty_get_customizer_color_vars() {
 		'content'       => array(
 			'setting' => 'background_color',
 		),
-		'header-footer' => array(
-			'setting' => 'header_footer_background_color',
+		'footer' => array(
+			'setting' => 'footer_background_color',
 		),
 		'header' => array(
 			'setting' => 'header_background_color'
@@ -465,5 +465,5 @@ function twentytwenty_get_customizer_color_vars() {
 }
 
 function twentytwenty_get_elements_array() {
-	
+
 }

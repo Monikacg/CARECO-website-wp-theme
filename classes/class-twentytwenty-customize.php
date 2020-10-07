@@ -56,9 +56,9 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 					'description' => __( 'Scales the logo to half its uploaded size, making it sharp on high-res screens.', 'twentytwenty' ),
 				)
 			);
-
+/*
 			$wp_customize->add_setting(
-				'header_footer_background_color',
+				'footer_background_color',
 				array(
 					'default'           => '#ffffff',
 					'sanitize_callback' => 'sanitize_hex_color',
@@ -69,9 +69,9 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 			$wp_customize->add_control(
 				new WP_Customize_Color_Control(
 					$wp_customize,
-					'header_footer_background_color',
+					'footer_background_color',
 					array(
-						'label'   => __( 'Header &amp; Footer Background Color', 'twentytwenty' ),
+						'label'   => __( 'Footer Background Color', 'twentytwenty' ),
 						'section' => 'colors',
 					)
 				)
@@ -119,11 +119,11 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 					),
 				)
 			);
-
+*/
 			/**
 			 * Implementation for the accent color.
 			*/
-
+/*
 			$wp_customize->add_setting(
 				'accent_hue',
 				array(
@@ -251,7 +251,7 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 					),
 				)
 			);
-
+*/
 			$wp_customize->add_section(
 				'cover_template_options',
 				array(
@@ -266,7 +266,7 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 				'cover_template_fixed_background',
 				array(
 					'capability'        => 'edit_theme_options',
-					'default'           => true,
+					'default'           => false,
 					'sanitize_callback' => array( __CLASS__, 'sanitize_checkbox' ),
 					'transport'         => 'postMessage',
 				)
@@ -289,7 +289,7 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 					'type'     => 'cover_fixed',
 				)
 			);
-
+/*
 			$wp_customize->add_setting(
 				'cover_template_separator_1',
 				array(
@@ -374,8 +374,9 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 					'type'     => 'cover_opacity',
 				)
 			);
+			*/
 		}
-
+/*
 		public static function sanitize_accent_accessible_colors( $value ) {
 			$value = is_array( $value ) ? $value : array();
 			foreach ( $value as $area => $values ) {
@@ -393,7 +394,7 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 		}
 		public static function sanitize_checkbox( $checked ) {
 			return ( ( isset( $checked ) && true === $checked ) ? true : false );
-		}
+		}*/
 	}
 	add_action( 'customize_register', array( 'TwentyTwenty_Customize', 'register' ) );
 }

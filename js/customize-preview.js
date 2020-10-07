@@ -90,8 +90,8 @@
 
 	} );
 
-	// Add listener for the "header_footer_background_color" control.
-	api( 'header_footer_background_color', function( value ) {
+	// Add listener for the "footer_background_color" control.
+	api( 'footer_background_color', function( value ) {
 		value.bind( function( to ) {
 			// Add background color to header and footer wrappers.
 			$( 'body:not(.overlay-header)#site-header, #site-footer' ).css( 'background-color', to );
@@ -123,7 +123,7 @@
 	api( 'background_color', function( value ) {
 		value.bind( function( to ) {
 			// Change body classes if this is the same background-color as the header/footer background.
-			if ( to.toLowerCase() === api( 'header_footer_background_color' ).get().toLowerCase() ) {
+			if ( to.toLowerCase() === api( 'footer_background_color' ).get().toLowerCase() ) {
 				$( 'body' ).addClass( 'reduced-spacing' );
 			} else {
 				$( 'body' ).removeClass( 'reduced-spacing' );
