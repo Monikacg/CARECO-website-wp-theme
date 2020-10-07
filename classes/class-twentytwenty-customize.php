@@ -66,15 +66,6 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 				)
 			);
 
-			$wp_customize->add_setting(
-				'header_background_color',
-				array(
-					'default'           => '#ffffff',
-					'sanitize_callback' => 'sanitize_hex_color',
-					'transport'         => 'postMessage',
-				)
-			);
-
 			$wp_customize->add_control(
 				new WP_Customize_Color_Control(
 					$wp_customize,
@@ -83,6 +74,15 @@ if ( ! class_exists( 'TwentyTwenty_Customize' ) ) {
 						'label'   => __( 'Header &amp; Footer Background Color', 'twentytwenty' ),
 						'section' => 'colors',
 					)
+				)
+			);
+
+			$wp_customize->add_setting(
+				'header_background_color',
+				array(
+					'default'           => '#ffffff',
+					'sanitize_callback' => 'sanitize_hex_color',
+					'transport'         => 'postMessage',
 				)
 			);
 
