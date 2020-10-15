@@ -1,14 +1,4 @@
-/* global twentyTwentyBgColors, twentyTwentyColor, jQuery, wp, _ */
-/**
- * Customizer enhancements for a better user experience.
- *
- * Contains extra logic for our Customizer controls & settings.
- *
- * @since Twenty Twenty 1.0
- */
-
 ( function() {
-	// Wait until the customizer has finished loading.
 	wp.customize.bind( 'ready', function() {
 
 		// Add a listener for background-color changes.
