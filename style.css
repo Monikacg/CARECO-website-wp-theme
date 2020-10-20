@@ -24,14 +24,11 @@
 ----------------------------------------------------------------------------- */
 
 /* COLORS:
-
-orange: 			rgba(237, 139, 0, 1);
-gray: 				rgba(87, 89, 88, 1);
-blue: 				rgba(122, 153, 172, 1);
-dark blue: 		rgba(91, 127, 149, 1);
-ligth orange:	rgba(214, 210, 196, 1);
-
-*/
+rgba(237, 139, 0, 1) orange
+rgba(87, 89, 88, 1) gray
+rgba(122, 153, 172, 1) blue
+rgba(91, 127, 149, 1) dark blue
+rgba(214, 210, 196, 1) light orange */
 
 /* -------------------------------------------------------------------------- */
 /*	0. CSS Reset
@@ -210,63 +207,6 @@ path {
 }
 
 /* Fonts ------------------------------------- */
-
-@font-face {
-    font-family: 'proxima_nova_altbold';
-    src: url(./fonts/proxima_nova/proxima_nova_alt_bold-webfont.woff2) format('woff2'),
-         url(./fonts/proxima_nova/proxima_nova_alt_bold-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'proxima_nova_altlight';
-    src: url(./fonts/proxima_nova/proxima_nova_alt_light-webfont.woff2) format('woff2'),
-         url(./fonts/proxima_nova/proxima_nova_alt_light-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'proxima_nova_altthin';
-    src: url(./fonts/proxima_nova/proxima_nova_alt_thin-webfont.woff2) format('woff2'),
-         url(./fonts/proxima_nova/proxima_nova_alt_thin-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'proxima_novablack';
-    src: url(./fonts/proxima_nova/proxima_nova_black-webfont.woff2) format('woff2'),
-         url(./fonts/proxima_nova/proxima_nova_black-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'proxima_novabold';
-    src: url(./fonts/proxima_nova/proxima_nova_bold-webfont.woff2) format('woff2'),
-         url(./fonts/proxima_nova/proxima_nova_bold-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'proxima_novaextrabold';
-    src: url(./fonts/proxima_nova/proxima_nova_extrabold-webfont.woff2) format('woff2'),
-         url(./fonts/proxima_nova/proxima_nova_extrabold-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'proxima_novathin';
-    src: url(./fonts/proxima_nova/proxima_nova_thin-webfont.woff2) format('woff2'),
-         url(./fonts/proxima_nova/proxima_nova_thin-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 @font-face {
     font-family: 'proxima_novaregular';
     src: url(./fonts/proxima_nova/proxima_nova-webfont.woff2) format('woff2'),
@@ -283,7 +223,6 @@ path {
 		transition-duration: 0s !important;
 	}
 }
-
 
 /* -------------------------------------------------------------------------- */
 /*	2. Element Base
@@ -302,8 +241,8 @@ h6,
 .faux-heading {
 	font-feature-settings: "lnum";
 	font-variant-numeric: lining-nums;
-	font-weight: 700;
-	letter-spacing: -0.0415625em;
+	/*font-weight: 700;*/
+	/*letter-spacing: -0.0415625em;*/
 	line-height: 1.25;
 	margin: 3.5rem 0 2rem;
 }
@@ -311,8 +250,8 @@ h6,
 h1,
 .heading-size-1 {
 	font-size: 3.6rem;
-	font-weight: 800;
-	line-height: 1.138888889;
+	/*font-weight: 800;
+	line-height: 1.138888889;*/
 }
 
 h2,
@@ -333,18 +272,21 @@ h4,
 h5,
 .heading-size-5 {
 	font-size: 2.1rem;
+	text-transform: uppercase;
 }
 
 h6,
 .heading-size-6 {
 	font-size: 1.6rem;
-	letter-spacing: 0.03125em;
-	text-transform: uppercase;
 }
 
 p {
 	line-height: 1.5;
 	margin: 0 0 1em 0;
+}
+
+.textwidget > p {
+	margin: 0 0 0.25em 0;
 }
 
 em,
@@ -354,8 +296,14 @@ dfn {
 	font-style: italic;
 }
 
+.textwidget a {
+	color: inherit;
+}
+
 i {
-	color: rgba(255, 255, 255, 1);
+	font-size: 3rem;
+	margin-right: 1rem;
+	color: inherit;
 }
 
 i:hover {
@@ -583,6 +531,18 @@ object {
 	display: block;
 	height: auto;
 	max-width: 100%;
+}
+
+@media (min-width: 782px) {
+	.wp-block-image::before {
+		content: " ";
+		width: clamp(100px, 33.33vw, 600px);
+		height: clamp(100px, 22.22vw, 400px);
+		position: absolute;
+		z-index: 100;
+		top: 40px;
+		background-image: linear-gradient(to top, rgba(87, 89, 88, 1), transparent, transparent);
+	}
 }
 
 figcaption,
@@ -1196,8 +1156,8 @@ button.toggle {
 }
 
 .wp-block-image.is-resized {
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 0; /*auto;*/
+	margin-right: 0; /*auto;*/
 }
 
 /* Search Form ------------------------------- */
@@ -2723,7 +2683,7 @@ h2.entry-title {
 }
 
 :root .has-accent-background-color {
-	background-color: rgba(237, 139, 0, 1);
+	background-color: rgba(91, 127, 149, 1);
 	color: rgba(255, 255, 255, 1);
 }
 
@@ -2886,6 +2846,30 @@ h2.entry-title {
 	margin-top: 3rem;
 }
 
+@media (min-width: 782px) {
+	.wp-block-column:not(:first-child) {
+    margin-left: auto;
+	}
+}
+
+@media (min-width: 1800px) {
+	.wp-block-column {
+		margin-left: calc((100vw - 1800px)/6);
+		margin-right: calc((100vw - 1800px)/6);
+	}
+}
+
+@media (min-width: 1800px) {}
+	.wp-block-column:last-child) {
+		margin-right: 0;
+	}
+}
+
+.wp-block-image img {
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+}
 
 /* Block: Shared Nesting Alignment Resets ---- */
 
@@ -2893,7 +2877,8 @@ h2.entry-title {
 [class*="__inner-container"] .wp-block-cover:not(.alignfull):not(.alignwide):not(.alignleft):not(.alignright) {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 160rem;
+	/*max-width: 160rem;*/
+	max-width: 100vw;
 }
 
 
@@ -3020,7 +3005,7 @@ h2.entry-title {
 }
 
 .wp-block-column {
-	margin-bottom: 3.2rem;
+	margin-bottom: 0; /*3.2rem;*/
 }
 
 .wp-block-column > *:first-child {
@@ -3030,6 +3015,8 @@ h2.entry-title {
 .wp-block-column > *:last-child {
 	margin-bottom: 0;
 }
+
+
 
 /* Block: Cover ------------------------------ */
 
@@ -3551,12 +3538,16 @@ figure.wp-block-table.is-style-stripes {
 	}
 }
 
+.wp-block-column h5, h5 ~ p {
+	margin-right: 1rem;
+	margin-left: 1rem;
+}
 
 /* Alignment Classes ------------------------- */
 
 .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
 	max-width: 160rem;
-	width: calc(100% - 4rem);
+	width: calc(100% - 8rem);
 }
 
 [class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
@@ -4807,7 +4798,7 @@ a.to-the-top > * {
 
 	h5,
 	.heading-size-5 {
-		font-size: 2.4rem;
+		font-size: clamp(1.5rem, -0.6rem + 3vw, 4rem);
 	}
 
 	h6,
@@ -5215,6 +5206,11 @@ a.to-the-top > * {
 		margin: 3.5rem 0 2rem;
 	}
 
+	.entry-content .wp-block-columns h5 {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
 	/* BLOCK: COVER */
 
 	.wp-block-cover-image .wp-block-cover__inner-container,
@@ -5372,8 +5368,8 @@ a.to-the-top > * {
 	}
 
 	.entry-content > .alignwide {
-		max-width: calc(100vw - 8rem);
-		width: calc(100vw - 8rem);
+		max-width: 100vw;
+		width: 100vw;
 	}
 
 	[class*="wp-block"].alignfull:not(.has-background) [class*="__inner-container"] > .alignleft,
@@ -5639,7 +5635,7 @@ a.to-the-top > * {
 
 	.wp-block-columns.alignwide + .wp-block-columns.alignwide,
 	.wp-block-columns.alignfull + .wp-block-columns.alignfull {
-		margin-top: -2.8rem;
+		margin-top: 0; /*-2.8rem;*/
 	}
 }
 
@@ -5892,7 +5888,7 @@ a.to-the-top > * {
 
 	.entry-content > .wp-block-group.alignwide.has-background,
 	.entry-content > .wp-block-group.alignfull.has-background {
-		padding: 8rem 4rem;
+		padding: 0; /*8rem 4rem;*/
 		margin-bottom: 0;
 		margin-top: 0;
 	}
@@ -6107,6 +6103,11 @@ a.to-the-top > * {
 		font-size: 8.4rem;
 	}
 
+	h5,
+	.heading-size-5 {
+		font-size: 3rem;
+	}
+
 	/* Helper Classes ------------------------ */
 
 	/* Site Header --------------------------- */
@@ -6291,7 +6292,6 @@ a.to-the-top > * {
 
 @media ( min-width: 1240px ) {
 
-
 	/* Blocks -------------------------------- */
 
 	body.template-full-width .entry-content > .alignleft {
@@ -6414,7 +6414,6 @@ a.to-the-top > * {
 }
 
 @media ( min-width: 1330px ) {
-
 
 	/* Entry Content ------------------------- */
 
