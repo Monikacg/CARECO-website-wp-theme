@@ -286,7 +286,7 @@ p {
 }
 
 .textwidget > p {
-	margin: 0 0 0.25em 0;
+	margin: 0;
 }
 
 em,
@@ -786,7 +786,7 @@ input[type="reset"]:hover,
 input[type="submit"]:focus,
 input[type="submit"]:hover {
 	text-decoration: none;
-	background-color: green; /* Denne må byttes ut*/
+	background-color: rgba(237,139,0,0.6); /* Denne må byttes ut*/
 }
 
 input[type="text"]:focus,
@@ -2906,6 +2906,28 @@ h2.entry-title {
 	margin-left: 0;
 }
 
+.entry-content .wp-block-latest-posts > li {
+	border-radius: 1rem;
+	border: solid 0.1rem rgba(214, 210, 196, 0);
+	background-color: rgba(214, 210, 196, 0.5);
+	padding: 1rem;/*
+	display: flex;
+	flex-direction: row-reverse;*/
+}
+
+.entry-content .wp-block-latest-posts > li:hover {
+	border-color: rgba(237, 139, 0, 1);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(237,139,0,0.6);
+}
+
+/*
+.entry-content .wp-block-latest-posts > li a,
+.entry-content .wp-block-latest-posts > li time,
+.entry-content .wp-block-latest-posts > li div:last-of-type {
+	margin-left: 1rem;
+}
+*/
+
 .entry-content .wp-block-archives > li:last-child,
 .entry-content .wp-block-categories > li:last-child,
 .entry-content .wp-block-latest-posts > li:last-child,
@@ -2918,6 +2940,10 @@ h2.entry-title {
 .entry-content .wp-block-latest-posts *,
 .entry-content .wp-block-latest-comments * {
 	font-family: inherit;
+}
+
+.entry-content .wp-block-latest-posts * {
+	margin: 0;
 }
 
 .entry-content .wp-block-archives li,
@@ -3496,6 +3522,14 @@ figure.wp-block-table.is-style-stripes {
 .post-inner .entry-content > .wp-block-cover.alignwide:first-child,
 .post-inner .entry-content > .wp-block-cover.alignfull:first-child {
 	margin-top: 0;
+}
+
+#post-31 .entry-content:first-child p:nth-child(1) {
+	padding: 2rem 0;
+	background-image: url(./assets/images/Careco_symbol_orange_opaque.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 /* Font Families ----------------------------- */
@@ -4325,7 +4359,6 @@ div.comment:first-of-type {
 }
 
 /* Widget: Text ------------------------------ */
-
 
 /* -------------------------------------------------------------------------- */
 
