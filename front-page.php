@@ -114,7 +114,7 @@ get_header();
 				)
 			);
 
-			edit_post_link();
+			//edit_post_link();
 			// Single bottom post meta.
 			twentytwenty_the_post_meta( get_the_ID(), 'single-bottom' );
 

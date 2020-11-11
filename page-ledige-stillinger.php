@@ -29,7 +29,7 @@ get_header();
       				'link_after'  => '</span>',
       			)
       		);
-      		edit_post_link();
+      		//edit_post_link();
       		?>
       	</div><!-- .section-inner -->
       </article><?php
