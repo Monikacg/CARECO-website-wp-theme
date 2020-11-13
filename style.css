@@ -45,18 +45,13 @@ h4,
 h5,
 h6,
 p,
-blockquote,
 address,
 big,
-cite,
-code,
 em,
 font,
 img,
 small,
 strike,
-sub,
-sup,
 li,
 ol,
 ul,
@@ -66,7 +61,6 @@ label,
 legend,
 button,
 table,
-caption,
 tr,
 th,
 td {
@@ -76,11 +70,6 @@ td {
 	margin: 0;
 	padding: 0;
 	text-align: inherit;
-}
-
-blockquote::before,
-blockquote::after {
-	content: "";
 }
 
 /* -------------------------------------------------------------------------- */
@@ -879,6 +868,7 @@ button.toggle {
 	max-width: 100vw;
 	padding: 3.15rem 0;
 	z-index: 100;
+	width: calc(100% - 8rem);
 }
 
 /* Header Titles ----------------------------- */
@@ -1695,7 +1685,7 @@ body:not(.singular) main > article:first-of-type {
 /* -------------------------------------------------------------------------- */
 /*	9. Post: Single
 /* -------------------------------------------------------------------------- */
-
+/*
 .category-ledig-stilling {
 	display: inline-grid;
 	grid-template-columns: 50% 50%;
@@ -1769,7 +1759,7 @@ body:not(.singular) main > article:first-of-type {
 		margin: 4rem 0;
 	}
 }
-
+*/
 /* Post Header ------------------------------- */
 
 .singular .entry-header {
@@ -1815,10 +1805,6 @@ h2.entry-title {
 
 .featured-media img {
 	margin: 0 auto;
-}
-
-.post-inner {
-	padding-top: 2.5rem;
 }
 
 .reduced-spacing.missing-post-thumbnail .post-inner {
@@ -2511,11 +2497,11 @@ h2.entry-title {
 	.featured-media {
 		margin-top: 6rem;
 	}
-
+/*
 	.post-inner {
 		padding-top: 8rem;
 	}
-
+*/
 	/* POST FOOTER */
 
 	.post-meta-wrapper.post-meta-single-bottom {
