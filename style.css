@@ -294,7 +294,7 @@ ol {
 }
 
 ul {
-	list-style: disc;
+	list-style: url(./assets/images/Bulletpoint16px.png);
 }
 
 ol {
