@@ -11,7 +11,7 @@ get_header();
       	<?php
       	get_template_part( 'template-parts/entry-header' );
       	?>
-      	<div class="post-inner thin">
+      	<div class="post-inner">
       		<div class="entry-content">
       			<?php
       			the_content();

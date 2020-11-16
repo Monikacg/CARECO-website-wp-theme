@@ -12,7 +12,7 @@ get_header();
 
 <main id="site-content" role="main">
 
-	<div class="section-inner thin error404-content">
+	<div class="section-inner error404-content">
 
 		<h1 class="entry-title"><?php echo "Siden ble ikke funnet" ?></h1>
 

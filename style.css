@@ -2,11 +2,11 @@
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------------------
 	0. 	CSS Reset
-	1. 	Document Setup
-	2. 	Element Base
-	3. 	Helper Classes
-	4. 	Site Header
-	5. 	Menu Modal
+	1. 	Document Setup								rgba(237, 139, 0, 1) orange
+	2. 	Element Base									rgba(87, 89, 88, 1) gray
+	3. 	Helper Classes								rgba(122, 153, 172, 1) blue
+	4. 	Site Header										rgba(91, 127, 149, 1) dark blue
+	5. 	Menu Modal										rgba(214, 210, 196, 1) light orange
 	7. 	Page Templates
 		a. 	Template: Cover Template
 		c. 	Template: Full Width
@@ -19,13 +19,6 @@
 	16. Site Footer
 	17. Media Queries
 ----------------------------------------------------------------------------- */
-
-/* COLORS:
-rgba(237, 139, 0, 1) orange
-rgba(87, 89, 88, 1) gray
-rgba(122, 153, 172, 1) blue
-rgba(91, 127, 149, 1) dark blue
-rgba(214, 210, 196, 1) light orange */
 
 /* -------------------------------------------------------------------------- */
 /*	0. CSS Reset
@@ -778,33 +771,6 @@ button.toggle {
 	fill: currentColor;
 }
 
-/* Opacity ----------------------------------- */
-
-.opacity-0 {
-	opacity: 0;
-}
-
-/* Fjernes? */
-.blend-mode-exclusion {
-	mix-blend-mode: exclusion;
-}
-
-.blend-mode-hue {
-	mix-blend-mode: hue;
-}
-
-.blend-mode-saturation {
-	mix-blend-mode: saturation;
-}
-
-.blend-mode-color {
-	mix-blend-mode: color;
-}
-
-.blend-mode-luminosity {
-	mix-blend-mode: luminosity;
-}
-
 /* Image Classes ----------------------------- */
 
 .bg-image {
@@ -1520,19 +1486,8 @@ button.sub-menu-toggle.active svg {
 	width: 100%;
 }
 
-.cover-color-overlay,
-.cover-color-overlay::before {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	top: 0;
-}
-
-.cover-color-overlay::before {
-	background: currentColor;
-	content: "";
-	display: block;
+.cover-header + .post-inner {
+	padding-top: 4rem;
 }
 
 .forside,
@@ -1542,7 +1497,6 @@ button.sub-menu-toggle.active svg {
 	left: 0;
 	right: 0;
 	top: 30px;
-	height: 100vh;
 }
 
 .forside::before {
@@ -2926,6 +2880,12 @@ h2.entry-title {
 		margin-left: 2rem;
 	}
 
+	/* Template: Cover Template -------------- */
+
+	.cover-header + .post-inner {
+		padding-top: 8rem;
+	}
+
 	/* Blocks -------------------------------- */
 
 	/* BLOCK: COLUMNS */
@@ -3108,12 +3068,6 @@ h2.entry-title {
 
 	.header-toggles .toggle {
 		padding: 0 4rem;
-	}
-
-	/* Template: Cover Template -------------- */
-
-	.cover-header + .post-inner {
-		padding-top: 10rem;
 	}
 
 	/* Blocks -------------------------------- */
