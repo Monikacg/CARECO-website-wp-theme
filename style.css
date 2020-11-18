@@ -7,17 +7,17 @@
 	3. 	Helper Classes								rgba(122, 153, 172, 1) blue
 	4. 	Site Header										rgba(91, 127, 149, 1) dark blue
 	5. 	Menu Modal										rgba(214, 210, 196, 1) light orange
-	7. 	Page Templates
+	6. 	Page Templates
 		a. 	Template: Cover Template
-		c. 	Template: Full Width
-	8.  Post: Archive
-	9.  Post: Single
-	10. Blocks
-	11. Entry Content
-	14. Error 404
-	15. Widgets
-	16. Site Footer
-	17. Media Queries
+		b. 	Template: Full Width
+	7.  Post: Archive
+	8.  Post: Single
+	9.	Blocks
+	10. Entry Content
+	11. Error 404
+	12. Widgets
+	13. Site Footer
+	14. Media Queries
 ----------------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------------- */
@@ -255,7 +255,7 @@ h6,
 
 p {
 	line-height: 1.5;
-	margin: 0 0 1em 0;
+	margin: 0 0 1rem 0;
 }
 
 i {
@@ -1465,7 +1465,7 @@ button.sub-menu-toggle.active svg {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	7a. Template: Cover Template
+/*	6a. Template: Cover Template
 /* -------------------------------------------------------------------------- */
 
 .cover-header {
@@ -1564,7 +1564,7 @@ body.template-cover .entry-header {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	7c. Template: Full Width
+/*	6b. Template: Full Width
 /* -------------------------------------------------------------------------- */
 
 body.template-full-width .entry-content .alignleft,
@@ -1605,7 +1605,7 @@ body.template-full-width [class*="wp-block"].alignfull:not(.has-background) [cla
 }
 
 /* -------------------------------------------------------------------------- */
-/*	8. Post: Archive
+/*	7. Post: Archive
 /* -------------------------------------------------------------------------- */
 
 /* Archive Header ---------------------------- */
@@ -1637,83 +1637,9 @@ body:not(.singular) main > article:first-of-type {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	9. Post: Single
+/*	8. Post: Single
 /* -------------------------------------------------------------------------- */
-/*
-.category-ledig-stilling {
-	display: inline-grid;
-	grid-template-columns: 50% 50%;
-	column-gap: 2rem;
-	row-gap: 2rem;
-}
 
-.category-ledig-stilling header {
-	grid-column: 1 / 3;
-	grid-row: 1 / 2;
-	align-self: center;
-}
-
-.category-ledig-stilling  figure {
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-	margin: 0;
-	align-self: flex-start;
-	width: calc(100% - 2rem);
-}
-
-.category-ledig-stilling  figure div img {
-	width: calc(100vw - 56rem);
-	padding-top: 10rem;
-	right: 0;
-	margin-left: calc(44rem - 20%);
-}
-
-.category-ledig-stilling .post-inner {
-	grid-column: 1 / 3;
-	grid-row: 2 / 4;
-	padding-top: 0;
-}
-
-.category-ledig-stilling .entry-content {
-	max-width: 100vw;
-}
-
-.category-ledig-stilling .entry-content > .wp-block-group {
-	margin-top: 0 !important;
-}
-
-.category-ledig-stilling .wp-block-group:not(.has-background) > .wp-block-group__inner-container {
-	width: 100%;
-	display: inline-grid;
-	grid-template-columns: 45rem auto;
-	column-gap: 2rem;
-	row-gap: 2rem;
-}
-
-.category-ledig-stilling .wp-block-group:not(.has-background) > .wp-block-group__inner-container .wp-block-buttons {
-	grid-column: 2 / 3;
-	grid-row: 1 / 2;
-	align-self: flex-end;
-	padding-right: 2rem;
-}
-
-@media (max-width: 1000px) {
-	.category-ledig-stilling .wp-block-group:not(.has-background) > .wp-block-group__inner-container, .category-ledig-stilling {
-		display: block;
-	}
-
-	.category-ledig-stilling  figure div img {
-		width: auto;
-		padding-top: 0;
-		margin-left: auto;
-	}
-
-	.category-ledig-stilling .wp-block-group:not(.has-background) > .wp-block-group__inner-container .wp-block-buttons {
-		align-self: center;
-		margin: 4rem 0;
-	}
-}
-*/
 /* Post Header ------------------------------- */
 
 .singular .entry-header {
@@ -1729,6 +1655,7 @@ h2.entry-title {
 
 .post .featured-media img {
 	max-width: 90vw;
+	width: inherit;
 }
 
 .featured-media {
@@ -1741,20 +1668,7 @@ h2.entry-title {
 }
 
 .singular .featured-media-inner {
-	position: relative;
-	left: calc(50% - 50vw);
-	width: 100vw;
-}
-
-.singular .featured-media::before {
-	background: rgba(255, 255, 255, 1);
-	content: "";
-	display: block;
-	position: absolute;
-	bottom: 50%;
-	left: 0;
-	right: 0;
-	top: 0;
+	width: inherit;
 }
 
 .featured-media img {
@@ -1766,7 +1680,7 @@ h2.entry-title {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	10. Blocks
+/*	9. Blocks
 /* -------------------------------------------------------------------------- */
 
 /* Block Colors ------------------------------ */
@@ -1931,7 +1845,7 @@ h2.entry-title {
 	margin-bottom: 0;
 }
 
-.wp-block-column h5, h5 ~ p {
+.wp-block-column h5, .wp-block-column h5 ~ p {
 	margin-right: 1rem !important;
 	margin-left: 1rem !important;
 }
@@ -1982,7 +1896,7 @@ h2.entry-title {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	11. Entry Content
+/*	10. Entry Content
 /* -------------------------------------------------------------------------- */
 
 .entry-content {
@@ -2087,7 +2001,7 @@ h2.entry-title {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	14. Error 404
+/*	11. Error 404
 /* -------------------------------------------------------------------------- */
 
 .error404 #site-content {
@@ -2099,7 +2013,7 @@ h2.entry-title {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	15.	Widgets
+/*	12.	Widgets
 /* -------------------------------------------------------------------------- */
 
 /* Widget Base ------------------------------- */
@@ -2135,13 +2049,12 @@ h2.entry-title {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	16. Site Footer
+/*	13. Site Footer
 /* -------------------------------------------------------------------------- */
 
 .footer-nav-widgets-wrapper {
 	background-color: rgba(91, 127, 149, 1);
 	color: rgba(255, 255, 255, 1);
-	/*padding: 3rem 0;*/
 	margin-top: 5rem;
 }
 
@@ -2152,7 +2065,7 @@ h2.entry-title {
 }
 
 /* -------------------------------------------------------------------------- */
-/*	17. Media Queries
+/*	14. Media Queries
 /* -------------------------------------------------------------------------- */
 
 @media ( max-width: 479px ) {
@@ -2567,8 +2480,8 @@ h2.entry-title {
 
 	.alignnone,
 	.aligncenter {
-		margin-bottom: 4rem;
-		margin-top: 4rem;
+		margin-bottom: 2rem;
+		margin-top: 2rem;
 	}
 
 	.entry-content > .alignwide:not(.wp-block-group.has-background),
@@ -2678,6 +2591,48 @@ h2.entry-title {
 		margin-top: 0;
 	}
 }
+
+@media (min-width: 1000px) {
+	.category-ledig-stilling {
+		display: inline-grid;
+		grid-template-columns: 40% 60%;
+	}
+
+	.category-ledig-stilling header {
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+		align-self: center;
+		justify-self: flex-start;
+	}
+
+	.category-ledig-stilling  figure {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		margin: 0;
+		align-self: flex-start;
+		width: 95%;
+	}
+
+	.category-ledig-stilling .post-inner {
+		grid-column: 1 / 3;
+		grid-row: 2 / 3;
+	}
+
+	.category-ledig-stilling .entry-content {
+		display: inline-grid;
+		grid-template-columns: 40% 60%;
+	}
+
+	.category-ledig-stilling .entry-content .wp-block-group:not(:first-child) {
+		margin-left: 0;
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+	}
+
+	.category-ledig-stilling .entry-content .wp-block-group:first-child {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+	}
 
 @media ( min-width: 1000px ) {
 
@@ -2940,6 +2895,10 @@ h2.entry-title {
 		grid-column: 3 / 3;
 	  grid-row: 1 / 1;
 		align-self: center;
+	}
+
+	.singular .entry-header {
+	  padding: 0;
 	}
 
 	/* ALIGNMENT CLASSES */

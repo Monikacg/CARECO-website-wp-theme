@@ -33,8 +33,6 @@ get_header();
       	</div><!-- .section-inner -->
       </article><?php
 		}
-	}
-	?>
-
+	}?>
 </main><!-- #site-content -->
 <?php get_template_part( 'template-parts/footer-menus-widgets' ); ?>
