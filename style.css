@@ -2595,21 +2595,21 @@ h2.entry-title {
 @media (min-width: 1000px) {
 	.category-ledig-stilling {
 		display: inline-grid;
-		grid-template-columns: 40% 60%;
+		grid-template-columns: 75% 25%;
 	}
 
 	.category-ledig-stilling header {
-		grid-column: 2 / 3;
+		grid-column: 1 / 2;
 		grid-row: 1 / 2;
 		align-self: center;
 		justify-self: flex-start;
 	}
 
 	.category-ledig-stilling  figure {
-		grid-column: 1 / 2;
+		grid-column: 2 / 3;
 		grid-row: 1 / 2;
 		margin: 0;
-		align-self: flex-start;
+		align-self: center;
 		width: 95%;
 	}
 
@@ -2620,21 +2620,35 @@ h2.entry-title {
 
 	.category-ledig-stilling .entry-content {
 		display: inline-grid;
-		grid-template-columns: 40% 60%;
+		grid-template-columns: 40rem auto;
 	}
 
-	.category-ledig-stilling .entry-content .wp-block-group:not(:first-child) {
-		margin-left: 0;
-		grid-column: 2 / 3;
-		grid-row: 1 / 2;
-	}
-
-	.category-ledig-stilling .entry-content .wp-block-group:first-child {
+	.category-ledig-stilling .entry-content > div:nth-child(1) {
 		grid-column: 1 / 2;
 		grid-row: 1 / 2;
 	}
 
-@media ( min-width: 1000px ) {
+	.category-ledig-stilling .entry-content > div:nth-child(2) {
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+	}
+
+	.category-ledig-stilling .entry-content > div:nth-child(3) {
+		grid-column: 2 / 3;
+		grid-row: 2 / 3;
+		margin-left: 0;
+	}
+
+	.category-ledig-stilling .entry-content > div:nth-child(1) > div {
+		margin: 4rem 0 0 0;
+	}
+/*
+	.category-ledig-stilling .entry-content > div:nth-child(2) > div {
+		transition: top 0.5s linear 0.5;
+	}
+*/
+
+/*@media ( min-width: 1000px ) {*/
 
 	/* Site Header --------------------------- */
 
