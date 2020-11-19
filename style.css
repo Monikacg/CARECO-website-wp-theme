@@ -2618,8 +2618,12 @@ h2.entry-title {
 		grid-row: 2 / 3;
 	}
 
+	.category-ledig-stilling .post-inner {
+		flex: 1 100%;
+	}
+
 	.category-ledig-stilling .entry-content {
-		display: inline-grid;
+		display: grid;
 		grid-template-columns: 40rem auto;
 	}
 
@@ -2642,12 +2646,26 @@ h2.entry-title {
 	.category-ledig-stilling .entry-content > div:nth-child(1) > div {
 		margin: 4rem 0 0 0;
 	}
+
+	#Nøkkelinfo {
+		border: 1px solid red;
+		height: fit-container;
+	}
+
+	#Nøkkelinfo > div {
+		border: 1px solid blue;
+		/*height: fit-content !important;*/
+		position: sticky;
+		top: 0;
+	}
+
 /*
-	.category-ledig-stilling .entry-content > div:nth-child(2) > div {
-		transition: top 0.5s linear 0.5;
+	.stick {
+	  position: fixed;
+	  top: 20px;
+	  width: 100%;
 	}
 */
-
 /*@media ( min-width: 1000px ) {*/
 
 	/* Site Header --------------------------- */
