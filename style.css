@@ -104,11 +104,11 @@ body {
 	word-break: break-word;
 	word-wrap: break-word;
 }
-
+/*
 #site-content {
 	overflow: hidden;
 }
-
+*/
 /* Clearing ---------------------------------- */
 .group::after,
 .entry-content::after {
@@ -2647,25 +2647,11 @@ h2.entry-title {
 		margin: 4rem 0 0 0;
 	}
 
-	#Nøkkelinfo {
-		border: 1px solid red;
-		height: fit-container;
-	}
-
-	#Nøkkelinfo > div {
-		border: 1px solid blue;
-		/*height: fit-content !important;*/
+	.category-ledig-stilling .entry-content > div:nth-child(2) > div {
 		position: sticky;
-		top: 0;
+		top: 7rem;
 	}
 
-/*
-	.stick {
-	  position: fixed;
-	  top: 20px;
-	  width: 100%;
-	}
-*/
 /*@media ( min-width: 1000px ) {*/
 
 	/* Site Header --------------------------- */
