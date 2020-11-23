@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<main id="site-content" role="main">
+<main id="site-content-front-page" role="main">
 	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 		<?php
 		$cover_header_style   = '';
