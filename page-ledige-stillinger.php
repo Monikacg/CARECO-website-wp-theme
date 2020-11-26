@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<main id="site-content" role="main">
+<main id="site-content-ledige-stillinger" role="main">
 	<?php
 	if ( have_posts() ) {
 		while ( have_posts() ) {
