@@ -72,6 +72,8 @@ td {
 html {
 	font-size: 62.5%; /* 1rem = 10px */
 	scroll-behavior: smooth;
+	height: 100vh;
+	background: rgba(91, 127, 149, 1);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -336,7 +338,27 @@ object {
 }
 
 @media (min-width: 782px) {
-	.wp-block-image::before {
+	#forside-mini-bilde-1::before {
+		content: " ";
+		width: clamp(100px, 33.33vw, 600px);
+		height: clamp(100px, 22.22vw, 400px);
+		position: absolute;
+		z-index: 100;
+		top: 40px;
+		background-image: linear-gradient(to top, rgba(87, 89, 88, 1), transparent, transparent);
+	}
+
+	#forside-mini-bilde-2::before {
+		content: " ";
+		width: clamp(100px, 33.33vw, 600px);
+		height: clamp(100px, 22.22vw, 400px);
+		position: absolute;
+		z-index: 100;
+		top: 40px;
+		background-image: linear-gradient(to top, rgba(87, 89, 88, 1), transparent, transparent);
+	}
+
+	#forside-mini-bilde-3::before {
 		content: " ";
 		width: clamp(100px, 33.33vw, 600px);
 		height: clamp(100px, 22.22vw, 400px);
@@ -1648,7 +1670,7 @@ body:not(.singular) main > article:first-of-type {
 
 h1.entry-title,
 h2.entry-title {
-	margin: 0;
+	margin: 0 1rem;
 }
 
 /* Featured Media ---------------------------- */
@@ -1798,7 +1820,8 @@ h2.entry-title {
 
 .wp-block-latest-posts a:hover,
 .wp-block-latest-posts a:focus {
-	text-decoration: underline;
+	text-decoration: none;
+	color: black;
 }
 
 .wp-block-latest-posts a {
@@ -1948,7 +1971,7 @@ h2.entry-title {
 	margin-top: 0;
 }
 
-#post-31 .entry-content:first-child p:nth-child(1) {
+#post-31 .entry-content:first-child .wp-block-group:nth-child(1) {
 	padding: 2rem 0;
 	background-image: url(./assets/images/Careco_symbol_orange_opaque.png);
 	background-size: contain;
@@ -2332,6 +2355,7 @@ h2.entry-title {
 
 	.singular .entry-header {
 		padding: 6rem 0;
+		justify-self: center;
 	}
 
 	.entry-categories {
@@ -2452,6 +2476,10 @@ h2.entry-title {
 
 	.wp-block-media-text .wp-block-media-text__content {
 		padding: 4rem;
+	}
+
+	.wp-block-media-text figure img {
+		width: 90%;
 	}
 
 	/* Entry Content ------------------------- */
@@ -2590,14 +2618,6 @@ h2.entry-title {
 	.wp-block-columns.alignfull + .wp-block-columns.alignfull {
 		margin-top: 0;
 	}
-}
-
-#Nøkkelinfo > div > div > div > p {
-	margin-bottom: 0;
-}
-
-#Nøkkelinfo {
-	width: fit-content;
 }
 
 @media (max-width: 700px) {
@@ -2949,7 +2969,6 @@ h2.entry-title {
 		grid-column: 2 / 2;
 	  grid-row: 1 / 1;
 		align-self: center;
-		justify-self: center;
 	}
 
 	.entry-content .wp-block-latest-posts > li .wp-block-latest-posts__post-excerpt {
