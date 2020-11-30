@@ -2355,7 +2355,6 @@ h2.entry-title {
 	/* POST HEADER */
 
 	.singular .entry-header {
-		padding: 6rem 0;
 		justify-self: center;
 	}
 
@@ -2659,7 +2658,7 @@ h2.entry-title {
 @media (min-width: 1000px) {
 
 	#site-content {
-		max-width: 120rem;
+		max-width: 100rem;
 		margin: 0 auto;
 	}
 
