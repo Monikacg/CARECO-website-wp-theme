@@ -1971,7 +1971,7 @@ h2.entry-title {
 	margin-top: 0;
 }
 
-#site-content-front-page .entry-content:first-child .wp-block-group:nth-child(1) {
+#forside-informasjon {
 	padding: 2rem 0;
 	background-image: url(./assets/images/Careco_symbol_orange_opaque.png);
 	background-size: contain;
