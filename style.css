@@ -276,9 +276,9 @@ a {
 	text-decoration: none;
 }
 
-a:hover,
-a:focus {
+a:hover {
 	text-decoration: none;
+	color: rgba(237, 139, 0, 1);
 }
 
 /* Lists ------------------------------------- */
@@ -340,8 +340,8 @@ object {
 @media (min-width: 782px) {
 	#forside-mini-bilde-1::before {
 		content: " ";
-		width: clamp(100px, 33.33vw, 600px);
-		height: clamp(100px, 22.22vw, 400px);
+		width: clamp(100px, 33vw, 600px);
+		height: clamp(100px, 21.99vw, 400px);
 		position: absolute;
 		z-index: 100;
 		top: 40px;
@@ -350,8 +350,8 @@ object {
 
 	#forside-mini-bilde-2::before {
 		content: " ";
-		width: clamp(100px, 33.33vw, 600px);
-		height: clamp(100px, 22.22vw, 400px);
+		width: clamp(100px, 33vw, 600px);
+		height: clamp(100px, 21.99vw, 400px);
 		position: absolute;
 		z-index: 100;
 		top: 40px;
@@ -360,8 +360,8 @@ object {
 
 	#forside-mini-bilde-3::before {
 		content: " ";
-		width: clamp(100px, 33.33vw, 600px);
-		height: clamp(100px, 22.22vw, 400px);
+		width: clamp(100px, 33vw, 600px);
+		height: clamp(100px, 21.99vw, 400px);
 		position: absolute;
 		z-index: 100;
 		top: 40px;
@@ -798,7 +798,7 @@ button.toggle {
 .bg-image {
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: auto 100%;
 }
 
 .bg-attachment-fixed {
@@ -1971,7 +1971,7 @@ h2.entry-title {
 	margin-top: 0;
 }
 
-#post-31 .entry-content:first-child .wp-block-group:nth-child(1) {
+#site-content-front-page .entry-content:first-child .wp-block-group:nth-child(1) {
 	padding: 2rem 0;
 	background-image: url(./assets/images/Careco_symbol_orange_opaque.png);
 	background-size: contain;
@@ -2482,6 +2482,10 @@ h2.entry-title {
 		width: 90%;
 	}
 
+	.wp-block-media-text p {
+		font-size: 2.1rem;
+	}
+
 	/* Entry Content ------------------------- */
 
 	.entry-content {
@@ -2603,6 +2607,12 @@ h2.entry-title {
 	.footer-widgets .widget:first-child {
 		margin-top: 0;
 	}
+
+	.footer-widgets img {
+		margin: 0 !important;
+		height: 5.4rem;
+		width: auto;
+	}
 }
 
 @media (min-width: 782px) {
@@ -2658,7 +2668,7 @@ h2.entry-title {
 @media (min-width: 1000px) {
 
 	#site-content {
-		max-width: 100rem;
+		max-width: 120rem;
 		margin: 0 auto;
 	}
 
@@ -2984,7 +2994,7 @@ h2.entry-title {
 	}
 
 	.singular .entry-header {
-	  padding: 0;
+	  padding: 4rem 0;
 	}
 
 	/* ALIGNMENT CLASSES */

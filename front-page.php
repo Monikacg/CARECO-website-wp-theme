@@ -8,7 +8,7 @@
 		<?php wp_head(); ?>
 	</head>
 
-	<body class="home page-template page-template-templates page-template-template-cover page-template-templatestemplate-cover-php page page-id-31 <<?php if (is_admin_bar_showing()) {
+	<body class="home page-template page-template-templates page-template-template-cover page-template-templates template-cover-php page page-id-326 <?php if (is_admin_bar_showing()) {
 		echo "logged-in admin-bar";
 	}  ?> custom-background wp-custom-logo wp-embed-responsive singular overlay-header has-post-thumbnail has-no-pagination not-showing-comments show-avatars template-cover footer-top-visible customize-support" data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="" data-gr-ext-disabled="forever">
 		<?php
@@ -115,7 +115,7 @@
 
 		// Get the fixed background attachment option.
 		if ( get_theme_mod( 'cover_template_fixed_background', true ) ) {
-			$cover_header_classes .= ' bg-attachment-fixed';
+			//$cover_header_classes .= ' bg-attachment-fixed';
 		}
 		?>
 
