@@ -338,6 +338,7 @@ object {
 }
 
 @media (min-width: 782px) {
+	/*
 	#forside-mini-bilde-1::before {
 		content: " ";
 		width: clamp(100px, 33vw, 600px);
@@ -367,6 +368,7 @@ object {
 		top: 40px;
 		background-image: linear-gradient(to top, rgba(87, 89, 88, 1), transparent, transparent);
 	}
+	*/
 }
 
 /* Inputs ------------------------------------ */
@@ -1848,6 +1850,23 @@ h2.entry-title {
 	padding: calc(1.1em - 0.2rem) calc(1.44em - 0.2rem);
 }
 
+#nye-muligheter-knapper a {
+	padding: 2rem;
+	width: 29rem;
+}
+
+@media (max-width: 700px) {
+	#nye-muligheter-knapper .wp-block-button {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 380px) {
+	#nye-muligheter-knapper a {
+		width: auto;
+	}
+}
+
 /* Block: Columns ---------------------------- */
 
 .wp-block-columns.alignfull,
@@ -1918,6 +1937,10 @@ h2.entry-title {
 	padding-right: 2rem;
 }
 
+#Rekruttering {
+	background-color: rgba(214, 210, 196, 1);
+}
+
 /* -------------------------------------------------------------------------- */
 /*	10. Entry Content
 /* -------------------------------------------------------------------------- */
@@ -1977,6 +2000,7 @@ h2.entry-title {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+	max-width: 120rem;
 }
 
 /* Alignment Classes ------------------------- */
@@ -2461,10 +2485,16 @@ h2.entry-title {
 
 	/* BLOCK: GROUP */
 
-	.wp-block-group.has-background {
+	#site-content-front-page .wp-block-group.has-background {
 		padding: 4rem;
-		margin-top: 0;
-		margin-bottom: 0;
+		margin: 1rem;
+		height: 55vh;
+	}
+
+	.wp-block-group.has-background {
+    padding: 4rem;
+    margin-top: 0;
+    margin-bottom: 0;
 	}
 
 	.alignfull:not(.has-background) > .wp-block-group__inner-container > p:not(.has-background-color) {
@@ -2472,18 +2502,34 @@ h2.entry-title {
 		padding-right: 0;
 	}
 
+	.category-ledig-stilling .post-inner .wp-block-group.has-background p:nth-child(2n+1) {
+		margin: 0;
+	}
+
 	/* BLOCK: MEDIA AND TEXT */
 
 	.wp-block-media-text .wp-block-media-text__content {
+		top: 0;
 		padding: 4rem;
 	}
 
 	.wp-block-media-text figure img {
 		width: 90%;
+		margin: 0 auto;
 	}
 
 	.wp-block-media-text p {
 		font-size: 2.1rem;
+	}
+
+	.wp-block-media-text .wp-block-media-text__content h2 {
+		margin-top: 2rem;
+	}
+
+	@media (min-width: 1200px) {
+		.wp-block-media-text figure img {
+			margin: 4rem 0 4rem 4rem;
+		}
 	}
 
 	/* Entry Content ------------------------- */
@@ -2535,7 +2581,7 @@ h2.entry-title {
 	}
 
 	.entry-content > .alignwide {
-		max-width: 100vw;
+		max-width: 120rem;
 	}
 
 	[class*="wp-block"].alignfull:not(.has-background) [class*="__inner-container"] > .alignleft,
@@ -3137,6 +3183,10 @@ h2.entry-title {
 	.entry-content > .alignfull {
 		margin-bottom: 10rem;
 		margin-top: 10rem;
+	}
+
+	#site-content-front-page .entry-content > .alignfull {
+		margin: 0;
 	}
 
 	[class*="wp-block"].alignwide.has-background [class*="__inner-container"] > .alignleft,
