@@ -131,22 +131,14 @@
 							if ($logoURL) {
 								echo "<img src='$logoURL'/>";
 							}
-							echo "<div class=\"wp-block-buttons aligncenter\" id=\"nye-muligheter-knapper\">
-								<div class=\"wp-block-button\">
-									<a class=\"wp-block-button__link has-accent-background-color has-text-color has-background\" style=\"border-radius:2px;\">Din<br>rekrutteringspartner</a>
-								</div>
-								<div class=\"wp-block-button is-style-outline\">
-									<a class=\"wp-block-button__link has-accent-color has-text-color\" style=\"border-radius:2px\">Ser du etter<br>nye muligheter?</a>
-								</div>
-							</div>";*/
+							*/
 							echo "
 								<div class=\"wp-block-columns\">
 									<div class=\"wp-block-column\">
 										<div class=\"wp-block-group has-accent-background-color has-background\">
 											<div class=\"wp-block-group__inner-container\">
 												<img src=\"http://localhost/wordpress/wp-content/uploads/2020/12/snakkeboble.png\" style=\"width: 40%;\">
-												<h4>Karriereutvikling</h4>
-												<p>Test</p>
+												<p>Settning som gjør at folk vil trykke på</p>
 											</div>
 										</div>
 									</div>
@@ -165,7 +157,7 @@
 									<div class=\"wp-block-column\" style=\"background-image: url(http://localhost/wordpress/wp-content/uploads/2020/12/sirkel.png); background-repeat: no-repeat; background-size: 35%; background-position: top;\">
 										<div class=\"wp-block-group has-accent-background-color has-background\" style=\"background-color: rgba(0,0,0,0); border: solid 2.5px rgb(91 127 149)\">
 											<div class=\"wp-block-group__inner-container\" >
-												<h4>Konsulenttjenester</h4>
+												<h5>Konsulenttjenester</h5>
 												<p>Test</p>
 											</div>
 										</div>

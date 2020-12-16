@@ -1886,12 +1886,12 @@ h2.entry-title {
 .wp-block-column > *:last-child {
 	margin-bottom: 0;
 }
-
+/*
 .wp-block-column h5, .wp-block-column h5 ~ p, .wp-block-column .wp-block-buttons {
 	margin-right: 2rem !important;
 	margin-left: 2rem !important;
 }
-
+*/
 /* Block: Cover ------------------------------ */
 
 .wp-block-cover-image .wp-block-cover__inner-container,
@@ -1935,10 +1935,6 @@ h2.entry-title {
 .alignfull:not(.has-background) > .wp-block-group__inner-container > p:not(.has-background-color) {
 	padding-left: 2rem;
 	padding-right: 2rem;
-}
-
-#Rekruttering {
-	background-color: rgba(214, 210, 196, 1);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -2488,7 +2484,7 @@ h2.entry-title {
 	#site-content-front-page .wp-block-group.has-background {
 		padding: 4rem;
 		margin: 1rem;
-		height: 55vh;
+		height: 43vh;
 	}
 
 	.wp-block-group.has-background {
