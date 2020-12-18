@@ -278,7 +278,7 @@ a {
 
 a:hover {
 	text-decoration: none;
-	color: rgba(237, 139, 0, 1);
+	color: rgba(237, 139, 0, 1) !important;
 }
 
 /* Lists ------------------------------------- */
@@ -335,40 +335,6 @@ object {
 	display: block;
 	height: auto;
 	max-width: 100%;
-}
-
-@media (min-width: 782px) {
-	/*
-	#forside-mini-bilde-1::before {
-		content: " ";
-		width: clamp(100px, 33vw, 600px);
-		height: clamp(100px, 21.99vw, 400px);
-		position: absolute;
-		z-index: 100;
-		top: 40px;
-		background-image: linear-gradient(to top, rgba(87, 89, 88, 1), transparent, transparent);
-	}
-
-	#forside-mini-bilde-2::before {
-		content: " ";
-		width: clamp(100px, 33vw, 600px);
-		height: clamp(100px, 21.99vw, 400px);
-		position: absolute;
-		z-index: 100;
-		top: 40px;
-		background-image: linear-gradient(to top, rgba(87, 89, 88, 1), transparent, transparent);
-	}
-
-	#forside-mini-bilde-3::before {
-		content: " ";
-		width: clamp(100px, 33vw, 600px);
-		height: clamp(100px, 21.99vw, 400px);
-		position: absolute;
-		z-index: 100;
-		top: 40px;
-		background-image: linear-gradient(to top, rgba(87, 89, 88, 1), transparent, transparent);
-	}
-	*/
 }
 
 /* Inputs ------------------------------------ */
@@ -1524,7 +1490,7 @@ button.sub-menu-toggle.active svg {
 }
 
 .forside::before {
-	background-image: linear-gradient(to top, rgba(91, 127, 149, 1), transparent, rgba(255, 255, 255, 1));
+	background-image: linear-gradient(to top, rgba(91, 127, 149, 1), rgba(91, 127, 149, 0.5), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1));
 	content: "";
 	display: block;
 }
@@ -1935,6 +1901,10 @@ h2.entry-title {
 .alignfull:not(.has-background) > .wp-block-group__inner-container > p:not(.has-background-color) {
 	padding-left: 2rem;
 	padding-right: 2rem;
+}
+
+#site-content-front-page .wp-block-group.has-background {
+	margin: 2rem 1rem;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -2482,9 +2452,10 @@ h2.entry-title {
 	/* BLOCK: GROUP */
 
 	#site-content-front-page .wp-block-group.has-background {
-		padding: 4rem;
+		padding: clamp(4rem, calc(100vh/4), calc(50vh - 350px));
+		padding-left: 4rem;
+		padding-right: 4rem;
 		margin: 1rem;
-		height: 43vh;
 	}
 
 	.wp-block-group.has-background {
@@ -2503,6 +2474,10 @@ h2.entry-title {
 	}
 
 	/* BLOCK: MEDIA AND TEXT */
+
+	.wp-block-media-text {
+		margin: 0 auto !important;
+	}
 
 	.wp-block-media-text .wp-block-media-text__content {
 		top: 0;

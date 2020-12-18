@@ -126,44 +126,31 @@
 					<header class="entry-header has-text-align-center">
 						<div class="entry-header-inner section-inner medium">
 							<?php
-							/*
-							$logoURL = get_post_custom_values('hovedlogo')[0];
-							if ($logoURL) {
-								echo "<img src='$logoURL'/>";
-							}
-							*/
-							echo "
-								<div class=\"wp-block-columns\">
-									<div class=\"wp-block-column\">
-										<div class=\"wp-block-group has-accent-background-color has-background\">
-											<div class=\"wp-block-group__inner-container\">
-												<img src=\"http://localhost/wordpress/wp-content/uploads/2020/12/snakkeboble.png\" style=\"width: 40%;\">
-												<p>Settning som gjør at folk vil trykke på</p>
-											</div>
-										</div>
-									</div>
-									<div class=\"wp-block-column\">
-										<div class=\"wp-block-group has-accent-background-color has-background\" style=\"background-color: rgba(0,0,0,0);\">
-											<div class=\"wp-block-group__inner-container\" style=\"background-image: url(http://localhost/wordpress/wp-content/uploads/2020/12/pil.png); background-repeat: no-repeat; background-size: 50%; background-position: center;\">
-												<h4>Rekruttering</h4>
-												<p>Test</p>
-												<p>Test</p>
-												<p>Test</p>
-												<p>Test</p>
-												<p>Test</p>
-											</div>
-										</div>
-									</div>
-									<div class=\"wp-block-column\" style=\"background-image: url(http://localhost/wordpress/wp-content/uploads/2020/12/sirkel.png); background-repeat: no-repeat; background-size: 35%; background-position: top;\">
-										<div class=\"wp-block-group has-accent-background-color has-background\" style=\"background-color: rgba(0,0,0,0); border: solid 2.5px rgb(91 127 149)\">
-											<div class=\"wp-block-group__inner-container\" >
-												<h5>Konsulenttjenester</h5>
-												<p>Test</p>
-											</div>
+							echo
+							"<div class=\"wp-block-columns alignwide\">
+								<div class=\"wp-block-column is-vertically-aligned-top\">
+									<div class=\"wp-block-group has-background\" style=\"background-color:#ffffff; color:#575958;\">
+										<div class=\"wp-block-group__inner-container\">
+											<h2 style=\"color:#575958;\">
+												<a href=\"http://careco.no/ser-du-etter-nye-muligheter/\">Ser du etter nye muligheter?</a>
+											</h2>
 										</div>
 									</div>
 								</div>
-							";
+								<div class=\"wp-block-column\">
+									<div class=\"wp-block-group has-background\" style=\"background-color:#ffffff; color:#575958;\">
+										<div class=\"wp-block-group__inner-container\">
+											<h2 style=\"color:#575958;\">
+												<a href=\"http://careco.no/din-rekrutteringspartner/\">Din IT-rekrutteringspartner</a>
+											</h2>
+										</div>
+									</div>
+								</div>
+							</div>";
+							$logoURL = get_post_custom_values('hovedlogo')[0];
+							if ($logoURL) {
+								/*echo "<img src='$logoURL'/>";*/
+							}
 							?>
 							<div class="to-the-content-wrapper">
 								<a href="#post-inner" class="to-the-content fill-children-current-color">
