@@ -28,7 +28,7 @@
 							<span class="toggle-icon">
 								<?php twentytwenty_the_theme_svg( 'ellipsis' ); ?>
 							</span>
-							<span class="toggle-text"><?php _e( 'Menu', 'twentytwenty' ); ?></span>
+							<span class="toggle-text"><?php echo "Meny"; ?></span>
 						</span>
 					</button><!-- .nav-toggle -->
 				</div><!-- .header-titles-wrapper -->
@@ -122,35 +122,39 @@
 		<div class="cover-header<?php echo $cover_header_classes; ?>"<?php echo $cover_header_style; ?>>
 			<div class="cover-header-inner-wrapper screen-height">
 				<div class="cover-header-inner">
-					<div class="forside"></div>
+					<div class="forside">
+					</div>
 					<header class="entry-header has-text-align-center">
 						<div class="entry-header-inner section-inner medium">
+							<div class="wp-block-columns alignwide">
+								<div class="wp-block-column is-vertically-aligned-top">
+									<a href="http://careco.no/ser-du-etter-nye-muligheter/">
+										<div class="wp-block-group has-background" style="background-color:rgba(91, 127, 149, 1); border-radius: 2rem;">
+											<div class="wp-block-group__inner-container">
+												<h2>
+													Ser du etter nye muligheter?
+												</h2>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="wp-block-column">
+									<a href="http://careco.no/din-rekrutteringspartner/">
+										<div class="wp-block-group has-background" style="background-color:rgba(91, 127, 149, 1); border-radius: 2rem;">
+											<div class="wp-block-group__inner-container">
+												<h2>
+													Din IT-rekrutteringspartner
+												</h2>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
 							<?php
-							echo
-							"<div class=\"wp-block-columns alignwide\">
-								<div class=\"wp-block-column is-vertically-aligned-top\">
-									<div class=\"wp-block-group has-background\" style=\"background-color:#ffffff; color:#575958;\">
-										<div class=\"wp-block-group__inner-container\">
-											<h2 style=\"color:#575958;\">
-												<a href=\"http://careco.no/ser-du-etter-nye-muligheter/\">Ser du etter nye muligheter?</a>
-											</h2>
-										</div>
-									</div>
-								</div>
-								<div class=\"wp-block-column\">
-									<div class=\"wp-block-group has-background\" style=\"background-color:#ffffff; color:#575958;\">
-										<div class=\"wp-block-group__inner-container\">
-											<h2 style=\"color:#575958;\">
-												<a href=\"http://careco.no/din-rekrutteringspartner/\">Din IT-rekrutteringspartner</a>
-											</h2>
-										</div>
-									</div>
-								</div>
-							</div>";
-							$logoURL = get_post_custom_values('hovedlogo')[0];
-							if ($logoURL) {
-								/*echo "<img src='$logoURL'/>";*/
-							}
+								$logoURL = get_post_custom_values('hovedlogo')[0];
+								if ($logoURL) {
+									/*echo "<img src='$logoURL'/>";*/
+								}
 							?>
 							<div class="to-the-content-wrapper">
 								<a href="#post-inner" class="to-the-content fill-children-current-color">
