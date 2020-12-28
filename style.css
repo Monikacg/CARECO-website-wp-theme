@@ -1815,23 +1815,6 @@ h2.entry-title {
 	padding: calc(1.1em - 0.2rem) calc(1.44em - 0.2rem);
 }
 
-#nye-muligheter-knapper a {
-	padding: 2rem;
-	width: 29rem;
-}
-
-@media (max-width: 700px) {
-	#nye-muligheter-knapper .wp-block-button {
-		margin-right: 0;
-	}
-}
-
-@media (max-width: 380px) {
-	#nye-muligheter-knapper a {
-		width: auto;
-	}
-}
-
 /* Block: Columns ---------------------------- */
 
 .wp-block-columns.alignfull,
@@ -1851,12 +1834,17 @@ h2.entry-title {
 .wp-block-column > *:last-child {
 	margin-bottom: 0;
 }
-/*
-.wp-block-column h5, .wp-block-column h5 ~ p, .wp-block-column .wp-block-buttons {
-	margin-right: 2rem !important;
-	margin-left: 2rem !important;
+
+#muligheter, #rekrutteringspartner {
+	background-color: rgba(91, 127, 149, 1);
+	border-radius: 2.5rem;
 }
-*/
+
+#muligheter:hover, #rekrutteringspartner:hover {
+	background-color: white;
+	box-shadow: 0 0 1rem rgba(237, 139, 0, 0.8);
+}
+
 /* Block: Cover ------------------------------ */
 
 .wp-block-cover-image .wp-block-cover__inner-container,

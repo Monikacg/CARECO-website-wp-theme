@@ -128,22 +128,22 @@
 						<div class="entry-header-inner section-inner medium">
 							<div class="wp-block-columns alignwide">
 								<div class="wp-block-column is-vertically-aligned-top">
-									<a href="http://careco.no/ser-du-etter-nye-muligheter/">
-										<div class="wp-block-group has-background" style="background-color:rgba(91, 127, 149, 1); border-radius: 2rem;">
+									<a href="http://careco.no/din-rekrutteringspartner/">
+										<div id="rekrutteringspartner" class="wp-block-group has-background">
 											<div class="wp-block-group__inner-container">
 												<h2>
-													Ser du etter nye muligheter?
+													Din IT-rekrutteringspartner
 												</h2>
 											</div>
 										</div>
 									</a>
 								</div>
 								<div class="wp-block-column">
-									<a href="http://careco.no/din-rekrutteringspartner/">
-										<div class="wp-block-group has-background" style="background-color:rgba(91, 127, 149, 1); border-radius: 2rem;">
+									<a href="http://careco.no/ser-du-etter-nye-muligheter/">
+										<div id="muligheter" class="wp-block-group has-background">
 											<div class="wp-block-group__inner-container">
 												<h2>
-													Din IT-rekrutteringspartner
+													Ser du etter nye muligheter?
 												</h2>
 											</div>
 										</div>
