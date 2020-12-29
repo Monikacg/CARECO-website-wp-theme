@@ -112,6 +112,7 @@ body {
 }
 
 /* Clearing ---------------------------------- */
+
 .group::after,
 .entry-content::after {
 	clear: both;
@@ -646,7 +647,6 @@ th {
 
 .screen-width {
 	position: relative;
-	/*left: calc(50% - 50vw);*/
 	width: 100vw;
 }
 
@@ -983,7 +983,7 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 }
 
 /* Primary Menu ---------------------------- */
-/* Må sjekkes */
+
 .primary-menu-wrapper {
 	display: none;
 }
@@ -1083,6 +1083,7 @@ ul.primary-menu {
 }
 
 /* SUB MENU */
+
 .primary-menu ul {
 	background: rgba(91, 127, 149, 1);
 	border-radius: 0.4rem;
@@ -1149,7 +1150,7 @@ ul.primary-menu {
 }
 
 /* DEEP DOWN */
-/* Må sjekkes */
+
 .primary-menu ul ul {
 	top: -1rem;
 }
@@ -1171,8 +1172,6 @@ ul.primary-menu {
 
 .primary-menu ul ul::after {
 	border-bottom-color: transparent;
-
-	/*rtl:ignore*/
 	border-left-color: rgba(91, 127, 149, 1);
 	bottom: auto;
 	right: -1.6rem;
@@ -1209,7 +1208,7 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
 /* -------------------------------------------------------------------------- */
 /*	5. Menu Modal
 /* -------------------------------------------------------------------------- */
-/* Må sjekkes */
+
 .menu-modal {
 	background: rgba(255, 255, 255, 1);
 	display: none;
@@ -1291,7 +1290,7 @@ button.close-nav-toggle .toggle-text:hover {
 }
 
 /* Main Menu --------------------------------- */
-/* Må sjekkes */
+
 .modal-menu {
 	position: relative;
 	left: calc(50% - 50vw);
@@ -1379,7 +1378,7 @@ button.sub-menu-toggle.active svg {
 }
 
 /* Main menu animation ----------------------- */
-/* Må sjekkes */
+
 .menu-wrapper .menu-item {
 	position: relative;
 }
@@ -1448,7 +1447,7 @@ button.sub-menu-toggle.active svg {
 }
 
 /* Expanded Menu ----------------------------- */
-/* Må sjekkes */
+
 .expanded-menu {
 	display: none;
 }
@@ -2101,6 +2100,7 @@ h2.entry-title {
 @media ( max-width: 599px ) {
 
 	/* Blocks -------------------------------- */
+
 	.wp-block-column:last-child {
 		margin-bottom: 0;
 	}
@@ -2131,6 +2131,7 @@ h2.entry-title {
 @media ( min-width: 600px ) {
 
 	/* Blocks -------------------------------- */
+
 	.wp-block-columns.alignwide + .wp-block-columns.alignwide,
 	.wp-block-columns.alignfull + .wp-block-columns.alignfull {
 		margin-top: -4rem;
@@ -2168,7 +2169,7 @@ h2.entry-title {
 
 	h1,
 	.heading-size-1 {
-		font-size: 4rem; /*4.8rem;*/ /*6.4rem;*/
+		font-size: 4rem;
 	}
 
 	h2,
@@ -2188,7 +2189,6 @@ h2.entry-title {
 
 	h5,
 	.heading-size-5 {
-		/*font-size: clamp(1.5rem, -0.6rem + 3vw, 4rem);*/
 		font-size: 2.4rem;
 	}
 
@@ -2391,11 +2391,7 @@ h2.entry-title {
 	.featured-media {
 		margin-top: 6rem;
 	}
-/*
-	.post-inner {
-		padding-top: 8rem;
-	}
-*/
+
 	/* POST FOOTER */
 
 	.post-meta-wrapper.post-meta-single-bottom {
